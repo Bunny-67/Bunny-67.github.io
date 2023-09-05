@@ -1,9 +1,9 @@
     
-    #dflt_txt {color:white;}
-    #dflt_txt {font-family:Arial, Helvetica, sans-serif;}
-    #dflt_header {background-color: black;}
-    #dflt_body {background-color:darkslategray;}
-    #dflt_footer {background-color: black;}
+    .dflt_txt {color:white;}
+    .dflt_txt {font-family:Arial, Helvetica, sans-serif;}
+    .dflt_header {background-color: black;}
+    .dflt_body {background-color:darkslategray;}
+    .dflt_footer {background-color: black;}
     
     
     
