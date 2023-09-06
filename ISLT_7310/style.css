@@ -7,9 +7,15 @@
         color: #ffffff;
     }
 
-    .dflt_body {background-color:darkslategray;}
+    .dflt_body {
+        background-color:darkslategray;
+        color: #ffffff;
+    }
 
-    .dflt_footer {background-color: black;}
+    .dflt_footer {
+        background-color: black;
+        color:#ffffff;
+    }
     
     .button1 {
         background-color: rgb(46, 112, 112);
