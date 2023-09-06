@@ -8,16 +8,19 @@
         background-color: black;
         color: #ffffff;
         padding: 10px 30px;
+        font-family:Arial, Helvetica, sans-serif;
     }
 
     .dflt_body {
         background-color:darkslategray;
         color: #ffffff;
+        font-family:Arial, Helvetica, sans-serif;
     }
 
     .dflt_footer {
         background-color: black;
         color:#ffffff;
+        font-family:Arial, Helvetica, sans-serif;
     }
     
     .button1 {
@@ -46,8 +49,12 @@
         }
 
 
-    #foot_txt {color:white;}
-    #foot_txt {font-family:Arial, Helvetica, sans-serif;}
+    #foot_txt {
+        color:white;
+        font-family:Arial, Helvetica, sans-serif;
+    }
 
-    #foot_txt2 {color:grey;}
-    #foot_txt2 {font-family:Arial, Helvetica, sans-serif;}
+    #foot_txt2 {
+        color:grey;
+        font-family:Arial, Helvetica, sans-serif;
+    }
