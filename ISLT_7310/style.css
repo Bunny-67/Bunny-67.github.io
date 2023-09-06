@@ -47,7 +47,13 @@
         margin: 4px 2px;
         cursor: pointer;      
         }
-
+.homelinkbutton {
+    background-color:black;
+    color:white;
+    border: none;
+    padding: 2px 2px;
+    text-align: center;
+}
 
     #foot_txt {
         color:white;
