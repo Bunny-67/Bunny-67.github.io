@@ -8,11 +8,26 @@
 
     .dflt_footer {background-color: black;}
     
+    .button1 {
+        border: none;
+        color:lightgrey;
+        padding: 10px 24px;
+        text-align: center;
+        font-size: 14px;
+        font-family:Arial, Helvetica, sans-serif;
+        margin: 4px 2px;
+        cursor: pointer;        
+        }
     .button1:hover {
+        border: none;
+        color:lightgrey;
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(1, 13, 63, 0.705);
         padding: 10px 24px;
+        text-align: center;
         font-size: 14px;
-        font-family:Arial, Helvetica, sans-serif;        
+        font-family:Arial, Helvetica, sans-serif;   
+        margin: 4px 2px;
+        cursor: pointer;      
         }
 
 
