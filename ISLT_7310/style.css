@@ -5,6 +5,7 @@
     .dflt_header {
         background-color: black;
         color: #ffffff;
+        padding: 30px 15px;
     }
 
     .dflt_body {
@@ -45,3 +46,6 @@
 
     #foot_txt {color:white;}
     #foot_txt {font-family:Arial, Helvetica, sans-serif;}
+
+    #foot_txt2 {color:grey;}
+    #foot_txt2 {font-family:Arial, Helvetica, sans-serif;}
