@@ -10,10 +10,22 @@
         padding: 10px 30px;
         font-family:Arial, Helvetica, sans-serif;
     }
+    .grad_header {
+        background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0));
+        color: white;
+        padding: 10px 30px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
 
     .dflt_body {
         background-color:darkslategray;
         color: #ffffff;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .grad_body {
+        background-image: linear-gradient(315deg, black, darkslategray);
+        color: white;
+        padding: 10px 30px;
         font-family:Arial, Helvetica, sans-serif;
     }
 
@@ -47,13 +59,13 @@
         margin: 4px 2px;
         cursor: pointer;      
         }
-.homelinkbutton {
-    background-color:black;
-    color:white;
-    border: none;
-    padding: 2px 2px;
-    text-align: center;
-}
+    .homelinkbutton {
+        background-color:black;
+        color:white;
+        border: none;
+        padding: 2px 2px;
+        text-align: center;
+        }
 
     #foot_txt {
         color:white;
