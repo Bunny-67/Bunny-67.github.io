@@ -1,12 +1,15 @@
     
     .dflt_txt {color:white;}
     .dflt_txt {font-family:Arial, Helvetica, sans-serif;}
+
     .dflt_header {background-color: black;}
+
     .dflt_body {background-color:darkslategray;}
+
     .dflt_footer {background-color: black;}
     
-    
-    
-    
+    .button1 {box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(1, 13, 63, 0.705);}
+
+
     #foot_txt {color:white;}
     #foot_txt {font-family:Arial, Helvetica, sans-serif;}
