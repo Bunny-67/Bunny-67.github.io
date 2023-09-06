@@ -27,6 +27,7 @@ Tested:  Sep 2, 2023; Passed on Chrome.
                <title>Home Page</title>
 
                 <link rel="stylesheet" href="style.css">
+                <link rel="stylesheet" href="nav.css">
 
                <style>
 
@@ -51,7 +52,11 @@ Tested:  Sep 2, 2023; Passed on Chrome.
                         text-align: center;
                     }
 
-
+                    #welcome_box {
+                        color: white;
+                        font-family: Arial, Helvetica, sans-serif;
+                        position: relative;
+                    }
                     
                 </style>
 </head>
@@ -63,13 +68,25 @@ Tested:  Sep 2, 2023; Passed on Chrome.
 
     <nav>
         <ul>
-            <li><a href="/ISLT_7310/about">
+            <li class="navbox">
+                <a href="/ISLT_7310/about">
                 <button class="button1 button1:hover">About</button>
-            </a></li>
+                </a>
+                <a href="#/ISLT_7310/projects_videos">
+                    <button class="button1 button1:hover">Videos</button>
+                </a>
+                <a href="#/ISLT_7310/projects_photos">
+                    <button class="button1 button1:hover">Photos</button>
+                </a>
+                <a href="#/ISLT_7310/projects_graphics">
+                    <button class="button1 button1:hover">Graphics</button>
+                </a>
+                <a style="float:right" href="/ISLT_7310/contact">
+                    <button class="button1 button1:hover">Contact Me</button>
+                </a>
+            </li>
 
-            <!--
-            <li><a href="/ISLT_7310/contact">Contact me</a></li>
-            -->
+            
           </ul>
     </nav>
 

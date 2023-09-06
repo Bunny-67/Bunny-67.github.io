@@ -1,0 +1,16 @@
+
+
+.navbox {
+    height: 50px;
+    width: 1800px;
+    background-color: rgb(46, 112, 112);
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    top: 112px;
+    
+    list-style:none;
+    outline: none;
+}
