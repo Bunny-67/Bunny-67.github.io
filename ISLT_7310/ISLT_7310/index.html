@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!--
+
+*****************************************************************************
+
+Title:  Home Page
+
+Use:  Main page of the site.
+
+Author:  Ian Ray
+
+School/Term:  Univ of Missouri, Fall 2023
+
+Developed: Sep 2, 2023
+
+Tested:  Sep 2, 2023; Passed on Chrome.
+
+******************************************************************************
+
+-->
+
+<head>
+               <meta charset="utf-8">
+               <title>Home Page</title>
+
+                <link rel="stylesheet" href="style.css">
+                <link rel="stylesheet" href="nav.css">
+
+               <style>
+
+                    #title {
+                        color:#ffffff;
+                        font-family:Arial, Helvetica, sans-serif;
+                    }
+
+                    h5 {color:lightgray;}
+
+                    #welcome_msg {
+                        color:white;
+                        font-family: 'Courier New', Courier, monospace;
+                        font-size: 30px;
+                        line-height: 40px;
+                        position:relative;
+                        text-align: left;
+                        letter-spacing: 3px;
+                    }
+
+                    #intro_para {
+                        color:rgb(0, 0, 0);
+                        font-family:Arial, Helvetica, sans-serif;
+                        position:relative;
+                        text-align: left;
+                        font-size: 20px;
+                        line-height: 12px;
+                    }
+                    #intro_para_ind {
+                        color:rgb(0, 0, 0);
+                        font-family:Arial, Helvetica, sans-serif;
+                        position:relative;
+                        text-align: left;
+                        font-size: 20px;
+                        text-indent: 75px;
+                        line-height: 12px;
+                    }
+
+                    #welcome_box {
+                        height: 325px;
+                        width: 390px;
+                        padding-left: 10px;
+                        padding-top: 5px;
+                        background-color: rgba(58, 138, 138);
+                        color: white;
+                        font-family: 'Courier New', Courier, monospace;
+                        position: relative;
+                        top: 145px;
+                        left: 400px;
+                        z-index: 5;
+                        box-shadow: -10px 10px rgba(17, 17, 17, 0.85);
+                    }
+
+                    #intro_box {
+                        height: 400px;
+                        width: 700px;
+                        padding-left: 80px;
+                        padding-top: 35px;
+                        padding-bottom: 30px;
+                        
+                        background-color: rgba(255, 255, 255, 0.65);;
+                        box-shadow: -10px -10px rgba(128, 204, 255, 0.5);
+                        
+                        position: absolute;
+                        left: 660px;
+                        top: 310px;
+                        z-index: 1;
+                    }
+                    
+                    #deco_box {
+                        height: 5px;
+                        width: 760px;
+                        background-color: rgb(138, 247, 241);
+                        color: rgb(26, 188, 238);
+                        position: relative;
+                        top: 0px;
+                        left: 700px;
+                        z-index: 3;
+                    }
+                    #deco_box2 {
+                        height: 360px;
+                        width: 5px;
+                        background-color: rgb(138, 247, 241);
+                        color: white;
+                        position: relative;
+                        top: 100px;
+                        left: 700px;
+                        z-index: 3;
+                    }
+                    #deco_box3 {
+                        height: 10px;
+                        width: 700px;
+                        background-color: rgba(9, 70, 88, 0.85);
+                        color: white;
+                        position: relative;
+                        top: 50px;
+                        left: 760px;
+                        z-index: 4;
+                    }
+                    #deco_box3_2 {
+                        height: 10px;
+                        width: 700px;
+                        background-color: rgba(113, 167, 184, 0.897);
+                        color: white;
+                        position: relative;
+                        top: 45px;
+                        left: 780px;
+                        z-index: 3;
+                    }
+                    #deco_box3_3 {
+                        height: 10px;
+                        width: 700px;
+                        background-color: rgb(138, 247, 241);
+                        color: white;
+                        position: relative;
+                        top: 40px;
+                        left: 800px;
+                        z-index: 2;
+                    }
+                </style>
+</head>
+
+
+
+<body class="grad_body">
+    <header class="dflt_header">
+        <h2 id="title">ianrayediting.com</h2>
+        <h5>Online Portfolio</h5>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="navbox" id="nav1">
+                <a href="#/ISLT_7310/projects_photos">
+                    <button class="button1 button1:hover">Photos</button>
+                </a>
+                <a href="#/ISLT_7310/projects_videos">
+                    <button class="button1 button1:hover">Videos</button>
+                </a>
+                <a href="#/ISLT_7310/projects_graphics">
+                    <button class="button1 button1:hover">Graphics</button>
+                </a>
+                <a href="/ISLT_7310/about">
+                    <button class="button1 button1:hover">About</button>
+                </a>
+                <a href="#/ISLT_7310/contact">
+                    <button class="button1 button1:hover">Contact Me</button>
+                </a>
+            </li>
+
+            
+          </ul>
+    </nav>
+
+    <main>
+            
+            <div class="container">
+                <div id="welcome_box">   
+
+                    <p id="welcome_msg">
+                        <strong>
+                        WELCOME<br>
+                        I AM IAN RAY, <br>
+                        A DIGITAL MEDIA SPECIALIST<br>
+                        AND THIS IS MY<br>
+                        DIGITAL PORTFOLIO<br>
+                    </strong>
+                    </p>    
+                </div>
+
+                <div id="deco_box"></div>
+                <div id="deco_box2"></div>
+                <div id="deco_box3"></div>
+                <div id="deco_box3_2"></div>
+                <div id="deco_box3_3"></div>
+
+
+                <div id="intro_box">
+                    <strong>
+                    <p id="intro_para_ind">    
+                        For the last five years, as a freelance digital media specialist,
+                    </p>
+                    <p id="intro_para_ind">
+                        I have been working hard to provide my clients quality work for 
+                    </p>
+                    <p id="intro_para_ind">
+                        their individual endeavors. This portfolio site contains the work I 
+                    </p>
+                    <p id="intro_para_ind">
+                        created for them as well as some of the personal work that I  
+                    </p>
+                    <p id="intro_para">
+                        have done. As a media specialist I aim to have the ability to create any 
+                    </p>
+                    <p id="intro_para">
+                        form of digital media that one could need to pursue their desired online  
+                    </p>
+                    <p id="intro_para">
+                        presence. I have worked in photography, videography, graphic design, 
+                    </p>
+                    <p id="intro_para">
+                        animation, website design, social media marketing, and more. With 
+                    </p>
+                    <p id="intro_para">
+                        proficiencies in the Adobe Creative Suite, I strive to be prepared for 
+                    </p>
+                    <p id="intro_para">
+                        my clients' digital needs without having to outsource any work. 
+                    </p>
+                    <p id="intro_para">
+                        I like to take a personal and attentive approach to my creations, 
+                    </p>
+                    <p id="intro_para">
+                        and truly deliver content that benefits the client.
+                    </p>
+                </strong>
+                </div>
+            </div>
+            
+    </main>   
+           
+            <div id="div2"></div>
+
+    <footer class="dflt_footer">
+        <p id="foot_txt">
+            Ian Ray <br>
+            Email: <br>
+             ianray.editing@gmail.com<br>
+             idry9v@umsystem.edu <br>
+        </p>
+            <p id="foot_txt2">
+                        DISCLAIMER <br>
+                        September 01, 2023 <br>
+                        <br>
+                        The information provided by Ian Ray Editing on https://ianrayediting.com is for general informational purposes only. All information on the Site <br>
+                        is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, <br>
+                        reliability, availability, or completeness of any information on the Site. <br>
+                        UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE <br>
+                        ON ANY INFORMATION PROVIDED ON THE SITE. YOUR USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK.
+            </p>
+    </footer> 
+</body>
+
+</html>
