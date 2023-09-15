@@ -23,7 +23,7 @@ Tested:  Sep 2, 2023; Passed on Chrome.
 
 <head>
                <meta charset="utf-8">
-               <title>About Me</title>
+               <title>About</title>
                
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
@@ -46,25 +46,28 @@ Tested:  Sep 2, 2023; Passed on Chrome.
 <body class="grad_body2">
     <header class="dflt_header">
         <h2>About</h2>
-        <h4 id="homelink"><a href="/ISLT_7310/index"><button class="homelinkbutton">ianrayediting.com</button></a></h4>
+        <div id="homelinkbutton">
+            <a href="/ISLT_7310/index" style="color: #ffffff; text-decoration: none;">ianrayediting.com
+            </a>
+          </div>    
     </header>
 
-    <nav>
-        <ul>
-            <li class="navbox" id="nav1">
-                <a href="/ISLT_7310/index" class="nav1 nav1:hover">Home</button>
-                </a>
-                <a href="#/ISLT_7310/projects_photos" class="nav1 nav1:hover">Photos</button>
-                </a>
-                <a href="#/ISLT_7310/projects_videos" class="nav1 nav1:hover">Videos</button>
-                </a>
-                <a href="#/ISLT_7310/projects_graphics" class="nav1 nav1:hover">Graphics</button>
-                </a>
-                <a href="#/ISLT_7310/contact" class="nav1 nav1:hover">Contact Me</button>
-                </a>
-            </li>
+    <nav class="navbox">
+        <ul class="nav1">
+          <li><a href="/ISLT_7310/index">Home</a></li>
+          <li><a href="/ISLT_7310/about">About</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Projects ›
+            <div class="dropdown-content">
+              <a href="#/ISLT_7310/projects_photos">Photos</a>
+              <a href="/ISLT_7310/projects_videos">Videos</a>
+              <a href="#/ISLT_7310/projects_graphics">Graphics</a>
+            </div>
+          </div>
+          <li><a href="#/ISLT_7310/contact">Contact</a>
+          </li>
         </ul>
-    </nav>
+      </nav>
 
         
     <main>
