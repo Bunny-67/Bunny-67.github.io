@@ -89,12 +89,20 @@
         margin-right: auto;
         cursor: pointer;      
         }
-.homelinkbutton {
-    background-color:black;
-    color:white;
-    border: none;
-    padding: 2px 2px;
-    text-align: center;
+    #homelinkbutton {
+        background-color: rgb(0, 0, 0);
+        border: none;
+        color:white;
+        list-style: none;
+        outline: none;
+        padding-bottom: 10px;
+
+        text-align: center;
+        font-size: 15px;
+        font-family:Arial, Helvetica, sans-serif;
+        text-decoration: none;
+
+        display: inline-block;
     }
 .container {
     position: relative;
