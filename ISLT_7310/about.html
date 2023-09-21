@@ -30,15 +30,49 @@ Tested:  Sep 2, 2023; Passed on Chrome.
 
     <style>
         #abt_para {
-            padding-left: 200px;
-            padding-right: 200px;
+            text-align: left;
+
+            font-size: x-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-indent: 60px;
+        }
+        #abt_paraS {
+            text-align: left;
+
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            text-indent: 10px;
+        }
+        #abt_para_decobox {
+            width: 70%;
+            height: fit-content;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.5);
         }
         #abt_quote {
-            padding-left: 200px;
-            padding-right: 200px;
+            text-align: center;
+            margin: auto;
+            max-width: 55%;
+            font-size: x-large;
+            text-indent: 60px;
+        }
+        #headshot_box {
+            height: fit-content;
+            width: fit-content;
+            background-color: #ffffff1f;
+            box-shadow: 3px 3px 1px rgba(255, 255, 255, 0.75);
+            margin-top: -30px;
+            margin-right: -700px;
         }
         #homelink {
             color:white;
+        }
+        #centerposdemoreel{
+            position: relative;
+            margin-left: 15%;
+            margin-right: 15%;
+            width: 70%;
         }
     </style>
 </head>
@@ -54,8 +88,8 @@ Tested:  Sep 2, 2023; Passed on Chrome.
 
     <nav class="navbox">
         <ul class="nav1">
-          <li><a href="/ISLT_7310/index">Home</a></li>
-          <li><a href="/ISLT_7310/about">About</a></li>
+          <li><a href="/ISLT_7310/index">Home</a>
+          <a href="/ISLT_7310/about">About</a>
           <div class="dropdown">
             <button class="dropbtn">Projects ›
             <div class="dropdown-content">
@@ -64,58 +98,77 @@ Tested:  Sep 2, 2023; Passed on Chrome.
               <a href="#/ISLT_7310/projects_graphics">Graphics</a>
             </div>
           </div>
-          <li><a href="#/ISLT_7310/contact">Contact</a>
+          <a href="#/ISLT_7310/contact">Contact</a>
           </li>
         </ul>
       </nav>
 
         
     <main>
+        <div class="container">
+            <div id="div0"></div>
+                    
+            <div id="div0"></div>
+                <div class="row">
 
-        <div id="div0"></div>
-            <a href="/ISLT_7310/rayresume.pdf" style="text-decoration: none;">
-                <button class="button2 button2:hover">Resume</button>
-            </a>
-        <div id="div0"></div>
+                    <div class="column">
+                        <iframe
+                            width="1280" height="720" 
+                            src="https://www.youtube.com/embed/n0bw0nOIVxs" 
+                            title="Ian Ray Video Editing Demo Reel" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+                    </div>
 
-        <iframe id="centerposdemoreel"
-            width="1280" height="720" 
-            src="https://www.youtube.com/embed/n0bw0nOIVxs" 
-            title="Ian Ray Video Editing Demo Reel" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-        </iframe>
-            <div id="div1"></div>
-
-        <p id="abt_para">   
-            I am Ian Ray, a student currently enrolled at the <em>University of Missouri</em>. My studies revolve around media and design, 
-            and I specialize in video editing and graphic design. I have worked hard in recent years to build a skill set that allows 
-            me to be versatile in my work, and that gives me the ability to create media of any style for my clients. I focus on 
-            attention to detail and a level of quality that others may not be willing to provide. 
-            <br>
-            <br>
-            My skills include photo and video collection and editing, using tools such as Adobe Photoshop, Premiere, and Illustrator 
-            to create videos, graphics, and other forms of media. My experience in social media management and strategic marketing 
-            allows me to craft and deliver ad campaigns with visible impact.
-            If you require media services, please don't hesitate to connect with me via email at <strong><em>ianray.editing@gmail.com</em></strong>. 
-            To view my work, I invite you to explore my portfolio on this website.
-            <br>
-            <br>
-            <strong>Ian Ray</strong>
-            <br>
-            <br>
-            <br>
-        </p>
-    
-        <blockquote cite="https://sophicalcontent.com/freelancing-quotes/" id="abt_quote">
-            'No matter how much experience you have, how many degrees you have, or how well-known you have become, there is always something new to learn. 
-            Don't rest on your past experiences. If you do nothing to improve your skills, you won't stay where you are.'
-            <br>
-            <br>
-                <strong>-Laura Spencer</strong>
-        </blockquote>
-        <div id="div1"></div>
+                <div class="row">  
+                    <div class="column"></div>
+                    <div class="column" id="abt_para_decobox">
+                            <p id="abt_para">   
+                                I am Ian Ray, a student currently enrolled at the <em>University of Missouri</em>. My studies revolve around media and design, 
+                                and I specialize in video editing and graphic design. I have worked hard in recent years to build a skill set that allows 
+                                me to be versatile in my work, and that gives me the ability to create media of any style for my clients. I focus on 
+                                attention to detail and a level of quality that others may not be willing to provide. 
+                            </p>
+                            
+                            <p id="abt_para">
+                                My skills include photo and video collection and editing, using tools such as Adobe Photoshop, Premiere, and Illustrator 
+                                to create videos, graphics, and other forms of media. My experience in social media management and strategic marketing 
+                                allows me to craft and deliver ad campaigns with visible impact.
+                                If you require media services, please don't hesitate to connect with me via email at <strong><em>ianray.editing@gmail.com</em></strong>. 
+                                To view my work, I invite you to<br> 
+                                explore my portfolio on this website.
+                            </p>
+                                
+                            <p id="abt_paraS">
+                                <strong> -Ian Ray</strong>
+                                <br>
+                            <div href="/ISLT_7310/rayresume.pdf" style="text-decoration: none; text-align: center;">
+                                <button class="button2 button2:hover">Resume</button>
+                            </div>
+                            </p>
+                    </div>
+                        <div id="headshot_box">
+                            <img src="Headshot-min.png" alt="Headshot" height="300" width="200">
+                        </div>
+                </div>
+                <div class="row">  
+                    <div class="column"></div>
+                    <div class="column">
+                    <blockquote cite="https://sophicalcontent.com/freelancing-quotes/" id="abt_quote">
+                        'No matter how much experience you have, how many degrees you have, or how well-known you have become, there is always something new to learn. 
+                        Don't rest on your past experiences. If you do nothing to improve your skills, you won't stay where you are.'
+                        <br>
+                        <br>
+                            <strong>-Laura Spencer</strong>
+                    </blockquote>
+                </div>
+                <div class="column"></div>
+                <div id="div1"></div>
+        </div>
     </main>   
+
+
     <footer class="dflt_footer">
         <p id="foot_txt">
             Contact <br>
