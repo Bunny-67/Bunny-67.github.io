@@ -23,22 +23,58 @@ Tested:  Sep 2, 2023; Passed on Chrome.
 
 <head>
                <meta charset="utf-8">
-               <title>About Me</title>
+               <title>About</title>
                
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
 
     <style>
         #abt_para {
-            padding-left: 200px;
-            padding-right: 200px;
+            text-align: left;
+
+            font-size: x-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-indent: 60px;
+        }
+        #abt_paraS {
+            text-align: left;
+
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            text-indent: 10px;
+        }
+        #abt_para_decobox {
+            width: 70%;
+            height: fit-content;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 10px 10px 2px rgba(255, 255, 255, 0.75);
+            margin-left: -50px;
         }
         #abt_quote {
-            padding-left: 200px;
-            padding-right: 200px;
+            text-align: center;
+            margin: auto;
+            max-width: 55%;
+            font-size: x-large;
+            text-indent: 60px;
+        }
+        #headshot_box {
+            height: 404px;
+            width: 300px;
+            background-color: #ffffff1f;
+            box-shadow: 3px 3px 1px rgba(255, 255, 255, 0.75);
+            margin-top: -320px;
+            margin-right: -815px;
         }
         #homelink {
             color:white;
+        }
+        #centerposdemoreel{
+            position: relative;
+            margin-left: 15%;
+            margin-right: 15%;
+            width: 70%;
         }
     </style>
 </head>
@@ -46,73 +82,97 @@ Tested:  Sep 2, 2023; Passed on Chrome.
 <body class="grad_body2">
     <header class="dflt_header">
         <h2>About</h2>
-        <h4 id="homelink"><a href="/ISLT_7310/index"><button class="homelinkbutton">ianrayediting.com</button></a></h4>
+        <div id="homelinkbutton">
+            <a href="/ISLT_7310/index" style="color: #ffffff; text-decoration: none;">ianrayediting.com
+            </a>
+          </div>    
     </header>
 
-    <nav>
-        <ul>
-            <li class="navbox" id="nav1">
-                <a href="/ISLT_7310/index" class="nav1 nav1:hover">Home</button>
-                </a>
-                <a href="#/ISLT_7310/projects_photos" class="nav1 nav1:hover">Photos</button>
-                </a>
-                <a href="#/ISLT_7310/projects_videos" class="nav1 nav1:hover">Videos</button>
-                </a>
-                <a href="#/ISLT_7310/projects_graphics" class="nav1 nav1:hover">Graphics</button>
-                </a>
-                <a href="#/ISLT_7310/contact" class="nav1 nav1:hover">Contact Me</button>
-                </a>
-            </li>
+    <nav class="navbox">
+        <ul class="nav1">
+          <li><a href="/ISLT_7310/index">Home</a>
+          <a href="/ISLT_7310/about">About</a>
+          <div class="dropdown">
+            <button class="dropbtn">Projects ›
+            <div class="dropdown-content">
+              <a href="#/ISLT_7310/projects_photos">Photos</a>
+              <a href="/ISLT_7310/projects_videos">Videos</a>
+              <a href="#/ISLT_7310/projects_graphics">Graphics</a>
+            </div>
+          </div>
+          <a href="#/ISLT_7310/contact">Contact</a>
+          </li>
         </ul>
-    </nav>
+      </nav>
 
         
     <main>
+        <div class="container">
+            <div id="div0"></div>
+                    
+            <div id="div0"></div>
+                <div class="row">
 
-        <div id="div0"></div>
-            <a href="/ISLT_7310/rayresume.pdf" style="text-decoration: none;">
-                <button class="button2 button2:hover">Resume</button>
-            </a>
-        <div id="div0"></div>
+                    <div class="column">
+                        <iframe
+                            width="1280" height="720" 
+                            src="https://www.youtube.com/embed/n0bw0nOIVxs" 
+                            title="Ian Ray Video Editing Demo Reel" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+                    </div>
 
-        <iframe id="centerposdemoreel"
-            width="1280" height="720" 
-            src="https://www.youtube.com/embed/n0bw0nOIVxs" 
-            title="Ian Ray Video Editing Demo Reel" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-        </iframe>
-            <div id="div1"></div>
-
-        <p id="abt_para">   
-            I am Ian Ray, a student currently enrolled at the <em>University of Missouri</em>. My studies revolve around media and design, 
-            and I specialize in video editing and graphic design. I have worked hard in recent years to build a skill set that allows 
-            me to be versatile in my work, and that gives me the ability to create media of any style for my clients. I focus on 
-            attention to detail and a level of quality that others may not be willing to provide. 
-            <br>
-            <br>
-            My skills include photo and video collection and editing, using tools such as Adobe Photoshop, Premiere, and Illustrator 
-            to create videos, graphics, and other forms of media. My experience in social media management and strategic marketing 
-            allows me to craft and deliver ad campaigns with visible impact.
-            If you require media services, please don't hesitate to connect with me via email at <strong><em>ianray.editing@gmail.com</em></strong>. 
-            To view my work, I invite you to explore my portfolio on this website.
-            <br>
-            <br>
-            <strong>Ian Ray</strong>
-            <br>
-            <br>
-            <br>
-        </p>
-    
-        <blockquote cite="https://sophicalcontent.com/freelancing-quotes/" id="abt_quote">
-            'No matter how much experience you have, how many degrees you have, or how well-known you have become, there is always something new to learn. 
-            Don't rest on your past experiences. If you do nothing to improve your skills, you won't stay where you are.'
-            <br>
-            <br>
-                <strong>-Laura Spencer</strong>
-        </blockquote>
-        <div id="div1"></div>
+                <div class="row">  
+                    <div class="column"></div>
+                    <div class="column" id="abt_para_decobox">
+                            <p id="abt_para">   
+                                I am Ian Ray, a student currently enrolled at the <em>University of Missouri</em>. My studies revolve around media and design, 
+                                and I specialize in video editing and graphic design. I have worked hard in recent years to build a skill set that allows 
+                                me to be versatile in my work, and that gives me the ability to create media of any style for my clients. I focus on 
+                                attention to detail and a level of quality that others may not be willing to provide. 
+                            </p>
+                            
+                            <p id="abt_para">
+                                My skills include photo and video collection and editing, using tools such as Adobe Photoshop, Premiere, and Illustrator 
+                                to create videos, graphics, and other forms of media. My experience in social media management and <br> 
+                                strategic marketing allows me to craft and deliver ad campaigns <br> 
+                                with visible impact. If you require media services, please don't <br> 
+                                hesitate to connect with me via email at <br> 
+                                <strong><em>ianray.editing@gmail.com</em></strong>. 
+                                To view my work, I invite you to <br>
+                                explore my portfolio on this website.
+                            </p>
+                                
+                            <p id="abt_paraS">
+                                <strong> -Ian Ray</strong>
+                                <br>
+                            <a href="/ISLT_7310/rayresume.pdf" style="text-decoration: none; text-align: center;">
+                                <button class="button2 button2:hover">Resume</button>
+                            </a>
+                            </p>
+                    </div>
+                        <div id="headshot_box">
+                            <img src="Headshot-min.png" alt="Headshot" height="404" width="300">
+                        </div>
+                </div>
+                <div class="row">  
+                    <div class="column"></div>
+                    <div class="column">
+                    <blockquote cite="https://sophicalcontent.com/freelancing-quotes/" id="abt_quote">
+                        'No matter how much experience you have, how many degrees you have, or how well-known you have become, there is always something new to learn. 
+                        Don't rest on your past experiences. If you do nothing to improve your skills, you won't stay where you are.'
+                        <br>
+                        <br>
+                            <strong>-Laura Spencer</strong>
+                    </blockquote>
+                </div>
+                <div class="column"></div>
+                <div id="div1"></div>
+        </div>
     </main>   
+
+
     <footer class="dflt_footer">
         <p id="foot_txt">
             Contact <br>

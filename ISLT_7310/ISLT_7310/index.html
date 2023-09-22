@@ -148,6 +148,35 @@ Tested:  Sep 2, 2023; Passed on Chrome.
              left: 800px;
              z-index: 2;
          }
+
+         #artststbtn {
+            height: 30px;
+            width: 200px;
+            color: #ffffff;
+            background-color: rgb(44, 44, 44);
+            position: absolute;
+
+            text-align: center;
+            left: 53%;
+            top: 220px;
+
+            transition-duration: 0.3s;
+            cursor: pointer
+            
+         }
+         #artststbtn:hover {
+            height: 30px;
+            width: 200px;
+            color: #ffffff;
+            background-color: rgb(44, 44, 44);
+            position: absolute;
+
+            text-align: center;
+            left: 53%;
+            top: 220px;
+            box-shadow: 0px 3px 1px rgb(173, 173, 173);
+            
+         }
      </style>
 </head>
 
@@ -159,17 +188,22 @@ Tested:  Sep 2, 2023; Passed on Chrome.
 <h5>Online Portfolio</h5>
 </header>
 
-<nav>
-<ul>
- <li class="navbox" id="nav1">
-     <a href="#/ISLT_7310/projects_photos" class="nav1 nav1:hover">Photos</a>
-     <a href="#/ISLT_7310/projects_videos" class="nav1 nav1:hover">Videos</a>
-     <a href="#/ISLT_7310/projects_graphics" class="nav1 nav1:hover">Graphics</a>
-     <a href="/ISLT_7310/about" class="nav1 nav1:hover">About</a>
-     <a href="#/ISLT_7310/contact" class="nav1 nav1:hover">Contact Me</a>
- </li>
-</ul>
-</nav>
+<nav class="navbox">
+    <ul class="nav1">
+      <li><a href="/ISLT_7310/index">Home</a></li>
+      <li><a href="/ISLT_7310/about">About</a></li>
+      <div class="dropdown">
+        <button class="dropbtn">Projects ›</button>
+        <div class="dropdown-content">
+          <a href="#/ISLT_7310/projects_photos">Photos</a>
+          <a href="/ISLT_7310/projects_videos">Videos</a>
+          <a href="#/ISLT_7310/projects_graphics">Graphics</a>
+        </div>
+      </div>
+      <li><a href="#/ISLT_7310/contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
 
 <main>
  
@@ -186,6 +220,10 @@ Tested:  Sep 2, 2023; Passed on Chrome.
              </strong>
          </p>    
      </div>
+
+        <div>
+            <button id="artststbtn"><a href="/ISLT_7310/reflection" style="text-decoration: none; color: #ffffff;">Artist Statement</a></button>
+        </div>
 
      <div id="deco_box"></div>
      <div id="deco_box2"></div>
