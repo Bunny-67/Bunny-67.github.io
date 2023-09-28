@@ -112,9 +112,9 @@ ul li:hover {
 .mobile-menu {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 2.7rem;
   left: 0;
-  height: calc(100vh - 50px);
+  height: calc(60vh - 5rem);
   width: 100%;
 }
 .open .mobile-menu {
@@ -123,10 +123,14 @@ ul li:hover {
   align-items: center;
   justify-content: flex-start;
   margin-top: 50px;
+  background-color: rgb(20,20,20);
 }
 .mobile-menu li{
-  margin-bottom: 10px;
-  padding: 10px 60px;
+  margin-top: 10px;
+  padding: 30px 25vw;
+  background-color: rgb(60,60,60);
+  min-width: 105vw;
+  text-align: center;
 }
 .mobile-menu a {
   font-size: 20px;
