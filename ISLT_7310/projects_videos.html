@@ -26,7 +26,7 @@ Tested:  Sep 12, 2023; Passed on Chrome.
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artist Statement</title>
+  <title>Videos</title>
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="nav.css">
@@ -46,7 +46,68 @@ Tested:  Sep 12, 2023; Passed on Chrome.
 
                     h5 {color:lightgray;}
 
+
+
+                    #harmony-box-1 {
+                      height: 50vh; width: 100vw;
+                      margin-top: 1vh;
+                      background-color: rgb(0,0,0);
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: center;
+                      align-items: center;
+                    }
+                    #harmony-vid1 {
+                      width: 45vw; height: 25vw;
+                      margin-top: 1%;
+                      margin-left: 1%;
+                    }
+                    #harmony-txt {
+                      max-width: 50%;
+                      text-align: left;
+                      padding: 50px;
+                      font-family: "Montserrat";
+                      font-weight: 300;
+                      font-size: 1.25vw;
+                      line-height: 3vh;
+                      text-wrap: wrap;
+                      margin-top: 3vh;
+                      text-indent: 2vw;
+                    }
                     
+                    @media only screen and (max-width:1200px) {
+                      #harmony-txt {
+                        font-size: 2vw;
+                        font-weight: 500;
+                        max-width: 50%;
+                        text-indent: 3vw;
+                        padding: 25px;
+                      }
+                    }
+
+                    @media only screen and (max-width:768px) {
+                      #harmony-box-1 {
+                        flex-direction: column;
+                        justify-content: center;
+                        height: fit-content;
+                      }
+                      #harmony-vid1 {
+                        margin-top: 5vh;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 90vw;
+                        height: 45vw;
+                      }
+                      #harmony-txt {
+                        font-size: 3.5vw;
+                        font-weight: 600;
+                        max-width: 100%;
+                        text-indent: 5vw;
+                        padding: 25px;
+                      }
+
+                    }
+
                 </style>
 </head>
 
@@ -85,9 +146,28 @@ Tested:  Sep 12, 2023; Passed on Chrome.
 
 
     <main>
+            <div id="harmony-box-1">
+              <iframe id="harmony-vid1" 
+                  src="https://www.youtube.com/embed/FPG41p23sgQ?si=3a_6HGJ5flcyE0ON" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+              </iframe>
+
+              <p id="harmony-txt">
+                In this project, I had the opportunity to create media for Harmony Chiropractic, 
+                a chiropractic firm in South Elgin, IL. For this I took on all of the roles
+                necessary to produce a finished video product, including directing, filming, 
+                lighting, sound design, video editing and graphic creation. I filmed and edited 
+                8 total videos spanning anywhere between 30sec to 3min. Harmony has used these 
+                videos to market on their Facebook and Instagram pages. Additionally, it was a 
+                great chance to branch into a new category of both filming and editing styles. 
+                The project lasted 6 months in total and utilized Adobe Premiere, Photoshop, and 
+                Audition.
+              </p>
+            </div>
             
-            
-            
+            <div id="div3"></div>
     </main>   
            
 
