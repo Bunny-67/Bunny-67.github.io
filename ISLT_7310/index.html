@@ -34,18 +34,20 @@ Tested:  Sep 2, 2023; Passed on Chrome.
 
     <link href="https://db.onlinewebfonts.com/c/037a670cefc97958beb036dab0f6e254?family=Bodoni+MT" rel="stylesheet"> <!--font-family: "Bodoni MT";-->
     <link href="https://db.onlinewebfonts.com/c/a96215c9d9ddf6f69b603c331081496e?family=ISOCTEUR+V1" rel="stylesheet"> <!--font-family: "ISOCTEUR V1";-->
+    <link href="https://db.onlinewebfonts.com/c/b5cae760e3ebeb67aed58508b5ae4269?family=Clicker+Script" rel="stylesheet"> <!--font-family: "Clicker Script";-->
+    <link href="https://db.onlinewebfonts.com/c/a81c6ef023e90fb9f87ac017d242a337?family=Montserrat" rel="stylesheet"> <!--font-family: "Montserrat";-->
 
     <style>
 
         .indbody {
-        background-image: url(webcardind.png), linear-gradient(to right, rgb(30,30,30), rgb(60,60,60));
-        background-position: top, bottom;
-        background-size: 100vw auto, 100vw auto;
-        background-position-y: 5rem;
-        background-repeat: no-repeat, repeat;
-        min-height: 1600px;
-        color: rgb(255,255,255);
-        font-family: Arial, Helvetica, sans-serif;
+            background-image: url(webcardind.png), linear-gradient(to right, rgb(30,30,30), rgb(60,60,60));
+            background-position: top, bottom;
+            background-size: 100vw auto, 100vw auto;
+            background-position-y: 5rem;
+            background-repeat: no-repeat, repeat;
+            min-height: 100vh;
+            color: rgb(255,255,255);
+            font-family: Arial, Helvetica, sans-serif;
         }
 
 
@@ -81,12 +83,11 @@ Tested:  Sep 2, 2023; Passed on Chrome.
             border: none;
 
             text-align: center;
-            left: 85vw;
-            top: 7vw;
+            right: 5vw;
+            top: calc(7rem + 6vh);
 
             transition-duration: 0.3s;
-            cursor: pointer
-            
+            cursor: pointer;           
          }
          #artststbtn:hover {
             height: 30px;
@@ -96,8 +97,8 @@ Tested:  Sep 2, 2023; Passed on Chrome.
             position: absolute;
 
             text-align: center;
-            left: 85vw;
-            top: 7vw;
+            right: 5vw;
+            top: calc(7rem + 6vh);
             box-shadow: 0px 3px 1px rgb(255, 255, 255);
          }
 
@@ -184,7 +185,6 @@ Tested:  Sep 2, 2023; Passed on Chrome.
         <div id="brand"><a href="/">ianrayediting.com</a></div>
             <nav>
                 <ul>
-                    <li><a href="/ISLT_7310/index">Home</a></li>
                     <li><a href="/ISLT_7310/about">About</a></li>
                     <li class="drop-menu-btn"><a href="#">Projects</a>
                         <ul class="drop-menu-content"> 
@@ -223,8 +223,9 @@ Tested:  Sep 2, 2023; Passed on Chrome.
 
             </p>    
 
-            <div>
-                <button id="artststbtn"><a href="/ISLT_7310/reflection" style="text-decoration: none; color: #ffffff;">Artist Statement</a></button>
+
+            <div href="/ISLT_7310/reflection" style="text-decoration: none; text-align: center;">
+                <button id="artststbtn">Artist Statement</button>
             </div>
 
 

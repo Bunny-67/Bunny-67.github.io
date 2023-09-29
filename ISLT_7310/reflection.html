@@ -21,87 +21,118 @@ Tested:  Sep , 2023; Passed on Chrome.
 -->
 
 <head>
-               <meta charset="utf-8">
-               <title>Artist Statement</title>
-               
-               <link rel="stylesheet" href="style.css">
-               <link rel="stylesheet" href="nav.css">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Artist Statement</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="nav.css">
+        <script src="java.js"></script>
+
+        <link href="https://db.onlinewebfonts.com/c/037a670cefc97958beb036dab0f6e254?family=Bodoni+MT" rel="stylesheet"> <!--font-family: "Bodoni MT";-->
+        <link href="https://db.onlinewebfonts.com/c/a96215c9d9ddf6f69b603c331081496e?family=ISOCTEUR+V1" rel="stylesheet"> <!--font-family: "ISOCTEUR V1";-->
+        <link href="https://db.onlinewebfonts.com/c/b5cae760e3ebeb67aed58508b5ae4269?family=Clicker+Script" rel="stylesheet"> <!--font-family: "Clicker Script";-->
+        <link href="https://db.onlinewebfonts.com/c/a81c6ef023e90fb9f87ac017d242a337?family=Montserrat" rel="stylesheet"> <!--font-family: "Montserrat";-->
 
     <style>
         #artstst {
             color: #ffffff;
             max-width: 50%;
-            font-size: x-large;
-            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.25vw;
+            font-family: "Montserrat";
             text-align: left;
-            margin: auto;
+            margin-top: 5vh;
+            margin-left: auto;
+            margin-right: auto;
             z-index: 1;
-            font-style: italic;
+            text-wrap: wrap;
+            text-indent: 50px;
+        }
+
+        @media only screen and (max-width:1320px) and (min-width:769px) {
+            #artstst {
+                font-size: 2vw;
+                font-weight: 400;
+                max-width: 70%;
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+            #artstst {
+                font-size: 3vw;
+                font-weight: 500;
+                max-width: 90%;
+            }
         }
     </style>
 </head>
 
-<body class="grad_body2">
-    <header class="dflt_header">
-        <h2>Artist Statement</h2>
-        <div id="homelinkbutton">
-            <a href="/ISLT_7310/index" style="color: #ffffff; text-decoration: none;">ianrayediting.com
-            </a>
-          </div>    
+<body style="background-image: linear-gradient(180deg, rgb(20,20,20),rgb(20,20,20),rgb(5,5,5),rgb(0,0,0),rgb(0,0,0));">
+    <header>  
+        <div id="brand"><a href="/">ianrayediting.com</a></div>
+            <nav>
+                <ul>
+                    <li><a href="/ISLT_7310/index">Home</a></li>
+                    <li><a href="/ISLT_7310/about">About</a></li>
+                    <li class="drop-menu-btn"><a href="#">Projects</a>
+                        <ul class="drop-menu-content"> 
+                            <li><a href="#/ISLT_7310/projects_photos">Photography</a></li>
+                            <li><a href="/ISLT_7310/projects_videos">Videography</a></li>
+                            <li><a href="#/ISLT_7310/projects_graphics">Graphic Design</a></li>
+                        </ul>
+                    </li>
+                    <li style="margin-right: 3.5vw;"><a href="#/ISLT_7310/contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="/ISLT_7310/index">Home</a></li>
+                    <li><a href="/ISLT_7310/about">About</a></li>
+                    <li><a href="/ISLT_7310/projects-mobile">Projects</a></li>
+                    <li><a href="/ISLT_7310/contact">Contact</a></li>
+                </ul>
+            </div>
+
     </header>
 
-    <nav class="navbox">
-        <ul class="nav1">
-          <li><a href="/ISLT_7310/index">Home</a></li>
-          <li><a href="/ISLT_7310/about">About</a></li>
-          <div class="dropdown">
-            <button class="dropbtn">Projects ›
-            <div class="dropdown-content">
-              <a href="#/ISLT_7310/projects_photos">Photos</a>
-              <a href="/ISLT_7310/projects_videos">Videos</a>
-              <a href="#/ISLT_7310/projects_graphics">Graphics</a>
-            </div>
-          </div>
-          <li><a href="#/ISLT_7310/contact">Contact</a>
-          </li>
-        </ul>
-    </nav>
-        <div id="div1"></div>
     <main>
-        <p id="artstst" style="text-indent: 50px;">
-            <span style="font-size: 75px; font-family: 'serif', Times, serif; font-style: italic; position: absolute; color: rgb(255, 255, 255); left: 453px; top: 230px; z-index: 2;">I</span>n
-             a world where digital landscapes constantly evolve, I find myself navigating the boundless realm of digital media with 
-            a sense of wonder and a commitment to<br> artistic expression. As a freelance digital media student, my journey is one of 
+        <p id="artstst">
+            In a world where digital landscapes constantly evolve, I find myself navigating the boundless realm of digital media with 
+            a sense of wonder and a commitment to artistic expression. As a freelance digital media student, my journey is one of 
             continuous exploration and growth, where each pixel, brushstroke, and keystroke serves as a conduit for creativity. 
             Proficient in Adobe Premiere, Photoshop, Illustrator, After Effects, Audition, Lightroom, Acrobat, and InDesign, I embark 
             on a journey where innovation converges with artistic expression. My artistic ideology is rooted in the fusion of technology 
-            and creativity, as I utilize the power of digital tools to bring my ideas to life. <br>
-            <br>
+            and creativity, as I utilize the power of digital tools to bring my ideas to life. 
+                
         </p>
-        <p id="artstst" style="text-indent: 50px;">
+        <p id="artstst">
             My diverse background as a digital media student allows me to embrace various mediums within the digital realm. From 2D 
             illustrations to 3D animations I attempt to breathe life into static concepts with my work. I focus on detail and seek 
             perfection with my projects, always using new techniques to not only keeps my own artistic journey exciting but also ensures 
-            that my portfolio remains as dynamic as the digital landscapes I seek to recreate. <br>
-            <br>
+            that my portfolio remains as dynamic as the digital landscapes I seek to recreate. 
+            
         </p>
-        <p id="artstst" style="text-indent: 50px;">
+        <p id="artstst">
             I focus on a connection with my clients that opens a pathway to mutual success. I try to really individualize and deliver the 
             product that the client has envisioned. Collaboration is another cornerstone of my artistic philosophy. Engaging with clients 
             or fellow creators, whether they be writers, musicians, or fellow visual artists, provides me with fresh perspectives that 
             enrich my work. It is within these creative exchanges that I find the spark that ignites innovative projects and pushes the 
-            boundaries of my own capabilities. <br>
-            <br>
+            boundaries of my own capabilities. 
+            
         </p>
-        <p id="artstst" style="text-indent: 50px;">
+        <p id="artstst">
             Technology's rapid evolution challenges me to remain adaptable and responsive, as I'm presented with new opportunities and 
             tools that redefine the artistic landscape. In the face of the new and constantly developing mediums and creation processes 
             such as Artificial Intelligence, I work to remain ahead of the curve and provide the most efficient method to create a 
             perfected finished product. Through constant learning and dedication, I aim to stay at the forefront of this ever-shifting 
-            arena, pushing the envelope of what is possible within the digital medium. <br>
-            <br>
+            arena, pushing the envelope of what is possible within the digital medium. 
+            
         </p>
-        <p id="artstst" style="text-indent: 50px;">
+        <p id="artstst">
             In the end, my art is more than just the sum of its pixels. It is a reflection of my passion, a testament to my growth, and a 
             tribute to the boundless world of digital media. As a freelance digital media student, I am both a creator and a student of 
             this dynamic realm. My artistic identity is not merely defined by my proficiency in software; it's a testament to my dedication, 
@@ -112,7 +143,7 @@ Tested:  Sep , 2023; Passed on Chrome.
 
         </p>
     </main>   
-        <div id="div1"></div>
+        <div id="div3"></div>
     <footer class="dflt_footer">
         <p id="foot_txt">
             Contact <br>

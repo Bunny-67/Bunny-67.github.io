@@ -23,11 +23,19 @@ Tested:  Sep 12, 2023; Passed on Chrome.
 -->
 
 <head>
-               <meta charset="utf-8">
-               <title>Videos</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artist Statement</title>
 
-                <link rel="stylesheet" href="style.css">
-                <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
+  <script src="java.js"></script>
+
+  <link href="https://db.onlinewebfonts.com/c/037a670cefc97958beb036dab0f6e254?family=Bodoni+MT" rel="stylesheet"> <!--font-family: "Bodoni MT";-->
+  <link href="https://db.onlinewebfonts.com/c/a96215c9d9ddf6f69b603c331081496e?family=ISOCTEUR+V1" rel="stylesheet"> <!--font-family: "ISOCTEUR V1";-->
+  <link href="https://db.onlinewebfonts.com/c/b5cae760e3ebeb67aed58508b5ae4269?family=Clicker+Script" rel="stylesheet"> <!--font-family: "Clicker Script";-->
+  <link href="https://db.onlinewebfonts.com/c/a81c6ef023e90fb9f87ac017d242a337?family=Montserrat" rel="stylesheet"> <!--font-family: "Montserrat";-->
 
                <style>
 
@@ -44,31 +52,37 @@ Tested:  Sep 12, 2023; Passed on Chrome.
 
 
 
-<body class="grad_body">
-    <header class="dflt_header">
-        <h2 id="title">Videos</h2>
-        <div id="homelinkbutton">
-            <a href="/ISLT_7310/index" style="color: #ffffff; text-decoration: none;">ianrayediting.com
-            </a>
+<body style="background-image: linear-gradient(180deg, rgb(20,20,20),rgb(20,20,20),rgb(5,5,5),rgb(0,0,0),rgb(0,0,0)); min-height: 100vh;">
+  <header>  
+      <div id="brand"><a href="/">ianrayediting.com</a></div>
+          <nav>
+              <ul>
+                  <li><a href="/ISLT_7310/index">Home</a></li>
+                  <li><a href="/ISLT_7310/about">About</a></li>
+                  <li class="drop-menu-btn"><a href="#">Projects</a>
+                      <ul class="drop-menu-content"> 
+                          <li><a href="#/ISLT_7310/projects_photos">Photography</a></li>
+                          <li><a href="/ISLT_7310/projects_videos">Videography</a></li>
+                          <li><a href="#/ISLT_7310/projects_graphics">Graphic Design</a></li>
+                      </ul>
+                  </li>
+                  <li style="margin-right: 3.5vw;"><a href="#/ISLT_7310/contact">Contact</a></li>
+              </ul>
+          </nav>
+          <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+              <ul class="mobile-menu">
+                  <li><a href="/ISLT_7310/index">Home</a></li>
+                  <li><a href="/ISLT_7310/about">About</a></li>
+                  <li><a href="/ISLT_7310/projects-mobile">Projects</a></li>
+                  <li><a href="/ISLT_7310/contact">Contact</a></li>
+              </ul>
           </div>
-    </header>
 
-    <nav class="navbox">
-        <ul class="nav1">
-          <li><a href="/ISLT_7310/index">Home</a></li>
-          <li><a href="/ISLT_7310/about">About</a></li>
-          <div class="dropdown">
-            <button class="dropbtn">Projects ›
-            <div class="dropdown-content">
-              <a href="#/ISLT_7310/projects_photos">Photos</a>
-              <a href="/ISLT_7310/projects_videos">Videos</a>
-              <a href="#/ISLT_7310/projects_graphics">Graphics</a>
-            </div>
-          </div>
-          <li><a href="#/ISLT_7310/contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
+  </header>
+
 
     <main>
             
@@ -76,7 +90,6 @@ Tested:  Sep 12, 2023; Passed on Chrome.
             
     </main>   
            
-            <div id="div2"></div>
 
     <footer class="dflt_footer">
         <p id="foot_txt">
