@@ -41,13 +41,15 @@ ul {
   text-transform: uppercase;
 }
 ul a {
+  display: block;
   color: rgb(255,255,255);
   font-size: 1rem;
   font-weight: 650;
+  padding: 15px 30px;
 }
 ul li {
-  padding: 15px 30px;
   margin-left: 10vw;
+  z-index: 10;
 }
 ul li:hover {
   transform: scale(1.1);
@@ -114,8 +116,10 @@ ul li:hover {
   position: absolute;
   top: 2.7rem;
   left: 0;
-  height: calc(60vh - 5rem);
+  height: fit-content;
   width: 100%;
+  z-index: 10;
+  padding: 10px;
 }
 .open .mobile-menu {
   display: flex;
@@ -137,6 +141,45 @@ ul li:hover {
   font-weight: 100;
 }
 
+
+
+@media only screen and (max-width:1200px) {
+  ul a {
+    color: rgb(255,255,255);
+    font-size: .75rem;
+    font-weight: 650;
+    padding: 15px 30px;
+  }
+  ul li {
+    margin-left: 10vw;
+    z-index: 10;
+  }
+
+  .drop-menu-content {
+    display: none;
+    position: absolute;
+    height: fit-content;
+    background-color: rgba(27, 141, 141, 1);
+    left: 0px;
+    top: 2.75rem;
+  }
+  .drop-menu-btn:hover .drop-menu-content {
+    display: block;
+  }
+  .drop-menu-btn:hover .drop-menu-content li {
+    margin-left: 0vw;
+  }
+  .drop-menu-content li:hover {
+    transform: scale(1);
+    background-color: rgb(20,20,20);
+    color: rgb(255,255,255);
+  }
+  .drop-menu-content a {
+    font-size: 0.6rem;
+    font-weight: 300;
+  }
+  
+}
 @media only screen and (max-width:768px) {
   
   header nav {
