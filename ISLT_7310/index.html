@@ -74,7 +74,7 @@ Tested:  Sep 2, 2023; Passed on Chrome.
              padding-left: 1.5vw;
          }
 
-         #artststbtn a {
+         .artststbtn a {
             background-color: rgb(64, 64, 64);
             position: absolute;
             border: none;
@@ -89,7 +89,7 @@ Tested:  Sep 2, 2023; Passed on Chrome.
             transition-duration: 0.3s;
             cursor: pointer;           
          }
-         #artststbtn a:hover {
+         .artststbtn a:hover {
             background-color: rgb(44, 165, 173);
             box-shadow: 0px 3px 1px rgb(255, 255, 255);
          }
@@ -130,31 +130,33 @@ Tested:  Sep 2, 2023; Passed on Chrome.
                 -webkit-text-fill-color: transparent;
             }
 
-            #artststbtn {
-            height: 8vh;
-            width: 100vw;
-            color: #ffffff;
-            background-color: rgb(64, 64, 64);
+            .artststbtn {
+                display: block;
+                width: 100%;
+                height: 85px;
+                background-color: rgb(64, 64, 64);
+                border: none;
+            }
+            .artststbtn a {
             position: relative;
             border: none;
-
             text-align: center;
-            top: 0;
-            left: 0;
+            top: 0vh;
+            left: 0vw;
+            min-width: 100%;
             z-index: 0;
+            text-decoration: none; 
+            color: rgb(255, 255, 255); 
+            padding: 30px 35vw;
+            font-size: 2.5vw;
 
             transition-duration: 0.3s;
-            cursor: pointer
-            }
-            
-            #artststbtn a {
-                padding: 2.5vh 31vw;
-                top: 8px;
-            }
-            #artststbtn a:hover {
-            background-color: rgb(64, 64, 64);
-            box-shadow: 0px 0px 0px;
-            }
+            cursor: pointer;           
+         }
+         .artststbtn a:hover {
+            background-color: rgb(64,64,64);
+            box-shadow: 0px 0px 0px rgb(255, 255, 255);
+         }
 
          }
 
@@ -212,10 +214,12 @@ Tested:  Sep 2, 2023; Passed on Chrome.
 
 
             <div>
-                <button id="artststbtn">
+                <button class="artststbtn">
                     <a href="/ISLT_7310/reflection">Artist Statement</a>
                 </button>
             </div>
+
+                <div id="mobilediv0"></div>
 
             <p id="intro_para">    
                 For the last five years, as a freelance digital media  specialist,
