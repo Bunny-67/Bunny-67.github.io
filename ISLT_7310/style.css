@@ -1,5 +1,21 @@
 
-.dflt_footer {
+@font-face {
+    font-family: WarsawGothicExtended3D; 
+    src:url("WarsawGothicExtended3D-2q78.otf");
+}
+@font-face {
+    font-family: WarsawGothicExtendedOutline; 
+    src:url("WarsawGothicExtendedOutline-7q9V.otf");
+}
+@font-face {
+    font-family: WarsawGothicExtended; 
+    src:url("WarsawGothicExtended-K2Bo.otf");
+}
+
+
+
+
+.footer {
     background-color: black;
     color: #ffffff;
     padding: 10px 30px;
@@ -185,6 +201,34 @@
     }
 
 
+
+
+    @media print {
+
+        *{
+            background: transparent !important;
+            color: rgb(0, 0, 0) !important;
+            box-shadow: none !important;
+            text-shadow: none !important;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 1in 1in 1in 1in;
+        }
+
+        .footer {
+            background: transparent !important;
+            color: rgb(0, 0, 0) !important;
+            box-shadow: none !important;
+            text-shadow: none !important;
+        }
+
+        .demoreel-box {
+            display: none !important;
+        }
+        #headshot_box {
+            display: none;
+        }
+        
+    }
 
 
 

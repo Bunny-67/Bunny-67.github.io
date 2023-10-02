@@ -23,13 +23,15 @@ header {
 }
 
 #brand {
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-weight: 200;
+  font-size: 2.5rem;
+  letter-spacing: .25rem;
   display: flex;
   align-items: center;
 }
 #brand a {
   color: rgb(255,255,255);
+  font-family: "WarsawGothicExtended3D";
 }
 
 ul {
@@ -38,13 +40,12 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  text-transform: uppercase;
 }
 ul a {
   display: block;
   color: rgb(255,255,255);
-  font-size: 1rem;
-  font-weight: 650;
+  font-family: "Montserrat";
+  font-size: 1.25rem;
   padding: 15px 30px;
 }
 ul li {
@@ -80,8 +81,8 @@ ul li:hover {
   color: rgb(255,255,255);
 }
 .drop-menu-content a {
-  font-size: 0.8rem;
-  font-weight: 400;
+  font-size: 0.75rem;
+  font-weight: 100;
 }
 
 
@@ -188,6 +189,20 @@ ul li:hover {
 
   #hamburger-icon {
     display: block;
+  }
+
+}
+
+
+
+
+@media print {
+
+  .navbar {
+    display: none;
+  }
+  ul, li {
+    display: none;
   }
 
 }
