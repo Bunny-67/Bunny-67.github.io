@@ -50,6 +50,7 @@ body {
         font-size: 20px;
         font-family: "ISOCTEUR V1";
         text-decoration: none;
+        text-transform: uppercase;
 
         transition-duration: 0.3s;
         cursor: pointer;        
