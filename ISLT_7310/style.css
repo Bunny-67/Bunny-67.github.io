@@ -122,6 +122,12 @@ body {
     #txt_ind {
         text-indent: 25px;
     }
+    #icon-anim {
+        transform: scale(0.75);
+    }
+    #icon-anim:hover {
+        transform: scale(1);
+    }
 
         #div0 {
             width: 100%;
