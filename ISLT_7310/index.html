@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -107,7 +106,7 @@ Tested:  Sep 2, 2023; Passed on Chrome.
                 background-position-y: 5rem;
                 background-repeat: no-repeat, repeat;
                 min-height: 1200px;
-
+                z-index: 0;
             }
             #welcome_msg {
              font-size: 7vw;
@@ -182,24 +181,33 @@ Tested:  Sep 2, 2023; Passed on Chrome.
                     <li><a href="/ISLT_7310/about">About</a></li>
                     <li class="drop-menu-btn"><a href="#">Projects</a>
                         <ul class="drop-menu-content"> 
-                            <li><a href="#/ISLT_7310/projects_photos">Photography</a></li>
+                            <li><a href="/ISLT_7310/projects_photos">Photography</a></li>
                             <li><a href="/ISLT_7310/projects_videos">Videography</a></li>
-                            <li><a href="#/ISLT_7310/projects_graphics">Graphic Design</a></li>
+                            <li><a href="/ISLT_7310/projects_graphics">Graphic Design</a></li>
                         </ul>
                     </li>
                     <li style="margin-right: 3.5vw;"><a href="#/ISLT_7310/contact">Contact</a></li>
                 </ul>
             </nav>
-            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div id="hamburger-icon", oninput="toggleMobileMenu(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
                 <ul class="mobile-menu">
                     <li><a href="/ISLT_7310/index">Home</a></li>
                     <li><a href="/ISLT_7310/about">About</a></li>
-                    <li><a href="/ISLT_7310/projects-mobile">Projects</a></li>
                     <li><a href="/ISLT_7310/contact">Contact</a></li>
+
+                            <li id="mobile-sub-menu-btn" oninput="toggleMobileSubMenu(this)">
+                                    <a href="#">Projects  +</a>
+                                    <ul class="mobile-sub-menu">
+                                            <li><a href="/ISLT_7310/projects_photos">Photography</a></li>
+                                            <li><a href="/ISLT_7310/projects_videos">Videography</a></li>
+                                            <li><a href="/ISLT_7310/projects_graphics">Graphic Design</a></li>
+                                    </ul>
+                            </li>
                 </ul>
+
             </div>
 
     </header>
