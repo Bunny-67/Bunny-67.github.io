@@ -5,17 +5,17 @@
 
 *****************************************************************************
 
-Title:  Template Page
+Title:  Photos Page
 
-Use:  Main page of the site.
+Use:  Photos projects page of the site.
 
 Author:  Ian Ray
 
 School/Term:  Univ of Missouri, Fall 2023
 
-Developed: Sep 2, 2023
+Developed: Oct. 7, 2023
 
-Tested:  Sep 2, 2023; Passed on Chrome.
+Tested:  , 2023; Passed on Chrome.
 
 ******************************************************************************
 
@@ -25,7 +25,7 @@ Tested:  Sep 2, 2023; Passed on Chrome.
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template Page</title>
+    <title>Photos</title>
 
      <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="nav.css">
@@ -39,13 +39,47 @@ Tested:  Sep 2, 2023; Passed on Chrome.
     <link href="https://db.onlinewebfonts.com/c/5fc6f4fd75e944a52a342ab2c7f100f1?family=Montserrat" rel="stylesheet"> <!--font-family: "Montserrat";-->
 
     <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 20px;
+            margin-left: 20vw;
+            margin-right: 20vw;
+        }
 
-         @media only screen and (max-width:768px) {
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
 
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
 
-         }
-         
-     </style>
+        h2 {
+            text-align: center;
+            font-family: "ISOCTEUR V1";
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-top: 3vh; 
+            margin-left: 2vh;       
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                padding: 10px;
+            }
+
+            .gallery img {
+                max-width: 100%;
+            }
+        }
+    </style>
 
         <Simple Browser: Show></Simple> 
 
@@ -57,6 +91,7 @@ Tested:  Sep 2, 2023; Passed on Chrome.
         <div id="brand"><a href="/ISLT_7310/index">ianrayediting.com</a></div>
             <nav class="navbar">
                 <ul>
+                    <li style="margin-left: 3.5vw;"><a href="/ISLT_7310/index">Home</a></li>
                     <li><a href="/ISLT_7310/about">About</a></li>
                     <li class="drop-menu-btn"><a href="#">Projects</a>
                         <ul class="drop-menu-content"> 
@@ -93,6 +128,31 @@ Tested:  Sep 2, 2023; Passed on Chrome.
 
     <main>
 
+        <h2>Graphic Gallery</h2>
+
+    <div class="gallery">
+        <img src="/ISLT_7310/grph-gallery/img1.png" alt="Graphic 1">
+        <img src="/ISLT_7310/grph-gallery/img2.png" alt="Graphic 2">
+        <img src="/ISLT_7310/grph-gallery/img3.png" alt="Graphic 3">
+        <img src="/ISLT_7310/grph-gallery/img4.png" alt="Graphic 4">
+        <img src="/ISLT_7310/grph-gallery/img5.png" alt="Graphic 5">
+        <img src="/ISLT_7310/grph-gallery/img6.png" alt="Graphic 6">
+        <img src="/ISLT_7310/grph-gallery/img7.png" alt="Graphic 7">
+        <img src="/ISLT_7310/grph-gallery/img8.png" alt="Graphic 8">
+        <img src="/ISLT_7310/grph-gallery/img9.png" alt="Graphic 9">
+        <img src="/ISLT_7310/grph-gallery/img10.png" alt="Graphic 10">
+        <img src="/ISLT_7310/grph-gallery/img11.png" alt="Graphic 11">
+        <img src="/ISLT_7310/grph-gallery/img12.png" alt="Graphic 12">
+        <img src="/ISLT_7310/grph-gallery/img13.png" alt="Graphic 13">
+        <img src="/ISLT_7310/grph-gallery/img14.png" alt="Graphic 14">
+        <img src="/ISLT_7310/grph-gallery/img15.png" alt="Graphic 15">
+        <img src="/ISLT_7310/grph-gallery/img16.png" alt="Graphic 16">
+        <img src="/ISLT_7310/grph-gallery/img17.png" alt="Graphic 17">
+        <img src="/ISLT_7310/grph-gallery/img18.png" alt="Graphic 18">
+        <img src="/ISLT_7310/grph-gallery/img19.png" alt="Graphic 19">
+        <img src="/ISLT_7310/grph-gallery/img20.png" alt="Graphic 20">
+
+    </div>
     
     </main>   
 

@@ -39,13 +39,47 @@ Tested:  , 2023; Passed on Chrome.
     <link href="https://db.onlinewebfonts.com/c/5fc6f4fd75e944a52a342ab2c7f100f1?family=Montserrat" rel="stylesheet"> <!--font-family: "Montserrat";-->
 
     <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 20px;
+            margin-left: 20vw;
+            margin-right: 20vw;
+        }
 
-         @media only screen and (max-width:768px) {
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
 
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
 
-         }
-         
-     </style>
+        h2 {
+            text-align: center;
+            font-family: "ISOCTEUR V1";
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-top: 3vh; 
+            margin-left: 2vh;       
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                padding: 10px;
+            }
+
+            .gallery img {
+                max-width: 100%;
+            }
+        }
+    </style>
 
         <Simple Browser: Show></Simple> 
 
@@ -57,6 +91,7 @@ Tested:  , 2023; Passed on Chrome.
         <div id="brand"><a href="/ISLT_7310/index">ianrayediting.com</a></div>
             <nav class="navbar">
                 <ul>
+                    <li style="margin-left: 3.5vw;"><a href="/ISLT_7310/index">Home</a></li>
                     <li><a href="/ISLT_7310/about">About</a></li>
                     <li class="drop-menu-btn"><a href="#">Projects</a>
                         <ul class="drop-menu-content"> 
@@ -93,6 +128,30 @@ Tested:  , 2023; Passed on Chrome.
 
     <main>
 
+        <h2>Photo Gallery</h2>
+
+    <div class="gallery">
+        <img src="/ISLT_7310/img-gallery/img1.png" alt="Image 1">
+        <img src="/ISLT_7310/img-gallery/img2.jpg" alt="Image 2">
+        <img src="/ISLT_7310/img-gallery/img3.png" alt="Image 3">
+        <img src="/ISLT_7310/img-gallery/img4.jpg" alt="Image 4">
+        <img src="/ISLT_7310/img-gallery/img5.png" alt="Image 5">
+        <img src="/ISLT_7310/img-gallery/img6.png" alt="Image 6">
+        <img src="/ISLT_7310/img-gallery/img7.jpg" alt="Image 7">
+        <img src="/ISLT_7310/img-gallery/img8.jpg" alt="Image 8">
+        <img src="/ISLT_7310/img-gallery/img9.png" alt="Image 9">
+        <img src="/ISLT_7310/img-gallery/img10.png" alt="Image 10">
+        <img src="/ISLT_7310/img-gallery/img11.png" alt="Image 11">
+        <img src="/ISLT_7310/img-gallery/img12.png" alt="Image 12">
+        <img src="/ISLT_7310/img-gallery/img13.png" alt="Image 13">
+        <img src="/ISLT_7310/img-gallery/img14.jpg" alt="Image 14">
+        <img src="/ISLT_7310/img-gallery/img15.png" alt="Image 15">
+        <img src="/ISLT_7310/img-gallery/img16.png" alt="Image 16">
+        <img src="/ISLT_7310/img-gallery/img17.jpg" alt="Image 17">
+        <img src="/ISLT_7310/img-gallery/img18.png" alt="Image 18">
+        <img src="/ISLT_7310/img-gallery/img19.png" alt="Image 19">
+        <img src="/ISLT_7310/img-gallery/img20.png" alt="Image 20">
+    </div>
     
     </main>   
 

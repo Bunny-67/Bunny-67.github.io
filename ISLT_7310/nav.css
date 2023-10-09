@@ -46,7 +46,7 @@ ul a {
   padding: 15px 30px;
 }
 ul li {
-  margin-left: 10vw;
+  margin-left: 8vw;
   z-index: 10;
 }
 ul li:hover {
@@ -175,12 +175,12 @@ ul.mobile-sub-menu.mopen {
 @media only screen and (max-width:1200px) {
   ul a {
     color: rgb(255,255,255);
-    font-size: .75rem;
+    font-size: 1rem;
     font-weight: 650;
     padding: 15px 30px;
   }
   ul li {
-    margin-left: 10vw;
+    margin-left: 0vw;
     z-index: 10;
   }
 
