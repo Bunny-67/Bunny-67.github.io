@@ -25,7 +25,7 @@ Tested:  Sep 2, 2023; Passed on Chrome.
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template Page</title>
+    <title>Contact and Services</title>
 
      <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="nav.css">
@@ -36,12 +36,100 @@ Tested:  Sep 2, 2023; Passed on Chrome.
     <link href="https://db.onlinewebfonts.com/c/037a670cefc97958beb036dab0f6e254?family=Bodoni+MT" rel="stylesheet"> <!--font-family: "Bodoni MT";-->
     <link href="https://db.onlinewebfonts.com/c/a96215c9d9ddf6f69b603c331081496e?family=ISOCTEUR+V1" rel="stylesheet"> <!--font-family: "ISOCTEUR V1";-->
     <link href="https://db.onlinewebfonts.com/c/b5cae760e3ebeb67aed58508b5ae4269?family=Clicker+Script" rel="stylesheet"> <!--font-family: "Clicker Script";-->
-    <link href="https://db.onlinewebfonts.com/c/5fc6f4fd75e944a52a342ab2c7f100f1?family=Montserrat" rel="stylesheet"> <!--font-family: "Montserrat";-->
+    <link href="https://db.onlinewebfonts.com/c/a81c6ef023e90fb9f87ac017d242a337?family=Montserrat" rel="stylesheet"> <!--font-family: "Montserrat";-->
 
     <style>
 
-         @media only screen and (max-width:768px) {
+        #serv-tbl {
+            width: 50%;
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 5vh;
+            font-family: "Montserrat";
+            color: rgb(255,255,255);
+            text-align: left;
+            
+        }
+        #serv-tbl thead {
+            height: fit-content;
+            background-color: rgb(0,0,0);
+            font-size: 1.25vw;
+            font-weight: 400;
+        }
+        #serv-tbl tbody {
+            background-color: rgb(50,50,50);
+            font-size: 1vw;
+            font-weight: 300;
+        }
+        #serv-tbl td {
+            padding-left: 10px;
+            padding-right: 5px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            text-wrap: wrap;
+        }
+        #serv-tbl th {
+            padding-left: 10px;
+            padding-right: 5px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            text-wrap: nowrap;
+        }
+        #tbld {
+            font-weight: bold;
+        }
 
+        #formbox {
+            height: fit-content;
+            width: 25vw;
+            padding: 30px;
+            background-color: rgb(50,50,50);
+            margin-left: 37.5vw;
+            margin-right: 37.5vw;
+            margin-top: 5vh;
+            font-family: "Montserrat";
+            font-size: .75vw;
+            font-weight: bold;
+        }
+        #srvc-chkbox {
+            margin-left: 1vw;
+            margin-top: 3px;
+            margin-bottom: 5px;
+            font-size: .5vw;
+            line-height: 1.25vh;
+        }
+
+
+        @media only screen and (max-width:1200px) {
+            #serv-tbl {
+                width: 75%;
+                margin-left: 12.5%;
+                margin-right: 12.5%;
+            }
+            #serv-tbl thead {
+                font-size: 2vw;
+                font-weight: 500;
+            }
+            #serv-tbl tbody {
+                font-size: 1.85vw;
+                font-weight: 300;
+            }
+
+        }
+         @media only screen and (max-width:768px) {
+            #serv-tbl {
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+            #serv-tbl thead {
+                font-size: 3vw;
+                font-weight: 500;
+            }
+            #serv-tbl tbody {
+                font-size: 2.5vw;
+                font-weight: 300;
+            }
 
          }
          
@@ -93,7 +181,78 @@ Tested:  Sep 2, 2023; Passed on Chrome.
 
     <main>
 
-    
+        <table id="serv-tbl">
+            <thead>
+                <tr>
+                    <th>Media Services</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="tbld">Video</td>
+                    <td>Video services can include anything 
+                        from on-site filming to editing, graphics, 
+                        image and sound design, special effects and 
+                        more. I like to 
+                        offer a wide range of videography skills 
+                        that can meet the needs of any client.</td>
+                </tr>
+                <tr>
+                    <td id="tbld">Photo</td>
+                    <td>Photography services include portrait photography,
+                        event photography, product photography, corporate 
+                        photography, sports photography, pet photography,
+                        and more. All services also include photo editing,
+                        library orginization, and the finished medium(s)
+                         of choice.</td>
+                </tr>
+                <tr>
+                    <td id="tbld">Graphic Design</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td id="tbld">Web Design & Development</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div id="formbox">
+            <form action="mailto:ianray.editing@gmail.com?Subject=Website%20Conact%20Form" method="post" enctype="text/plain">
+                <label for="fname">First name:</label><span style="color: rgba(200,200,200,0.75); margin-right: 1.4vw;">(required)</span>
+                <label for="lname">Last name:</label><span style="color: rgba(200,200,200,0.75);">(required)</span><br>
+                <input type="text" id="fname" name="fname" required>
+                <input type="text" id="lname" name="lname" required><br>
+                <br>
+                <label for="eml">Email:</label><span style="color: rgba(200,200,200,0.75); margin-right: 3.25vw;">(required)</span>
+                <label for="phn">Phone:</label><br>
+                <input type="text" id="eml" name="eml" required>
+                <input type="text" id="phn" name="phn"><br>
+                <br>
+                <p>Service Inquiry</p>
+                <div id="srvc-chkbox">
+                    <input style="transform: translateY(2px);" type="checkbox" id="srvc1" name="srvc1" value="Video">
+                    <label for="srvc1"> Video</label><br>
+                    <input style="transform: translateY(2px);" type="checkbox" id="srvc2" name="srvc2" value="Photo">
+                    <label for="srvc2"> Photo</label><br>
+                    <input style="transform: translateY(2px);" type="checkbox" id="srvc3" name="srvc3" value="Graphic">
+                    <label for="srvc3"> Graphic Design</label><br>
+                    <input style="transform: translateY(2px);" type="checkbox" id="srvc4" name="srvc4" value="Web">
+                    <label for="srvc4"> Web Design & Development</label><br>
+                    <input style="transform: translateY(2px);" type="checkbox" id="srvc5" name="srvc5" value="Other:">
+                    <label for="srvc5"> Other:</label><br>
+                    <input style="transform: translateY(2px);" type="text" id="other" name="other"><br>
+                </div>
+                <br>
+                <label> Message:</label><br>
+                <textarea></textarea>
+                <br>
+                <input style="float: right;" type="submit" value="Submit">
+                <br>
+            </form>
+        </div>
+
     </main>   
 
         <div id="div1"></div>
