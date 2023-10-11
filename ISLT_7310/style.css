@@ -124,44 +124,44 @@ body {
     #txt_ind {
         text-indent: 25px;
     }
-    #icon-anim {
+    .icon-anim {
         transform: scale(0.75);
     }
-    #icon-anim:hover {
+    .icon-anim:hover {
         transform: scale(1);
     }
 
-        #div0 {
+        .div0 {
             width: 100%;
             height: 1vw;
             background-color: #ffffff00;
             position: relative;
         }
-        #div1 {
+        .div1 {
             width: 100%;
             height: 3vw;
             background-color: #ffffff00;
             position: relative;
         }
-        #div2 {
+        .div2 {
             width: 100%;
             height: 5vw;
             background-color: #ffffff00;
             position: relative;
         }
-        #div3 {
+        .div3 {
             width: 100%;
             height: 10vw;
             background-color: #ffffff00;
             position: relative;
         }
-        #div4 {
+        .div4 {
             width: 100%;
             height: 15vw;
             background-color: #ffffff00;
             position: relative;
         }
-        #divF {
+        .divF {
             width: 100%;
             height: 7vw;
             position: relative;
@@ -182,10 +182,10 @@ body {
         .responsive {
             transform: scale(.4);
         }
-        #mobileview {
+        .mobileview {
             margin-top: -250px;
         }
-        #mobiledel {
+        .mobiledel {
             display: none;
         }
 
@@ -205,19 +205,19 @@ body {
             text-decoration: none;     
             }
 
-        #mobilediv0 {
+        .mobilediv0 {
             width: 100%;
             height: 10px;
             background-color: #ffffff00;
             position: relative;
         }
-        #mobilediv1 {
+        .mobilediv1 {
             width: 100%;
             height: 50px;
             background-color: #ffffff00;
             position: relative;
         }
-        #mobilediv2 {
+        .mobilediv2 {
             width: 100%;
             height: 20vh;
             background-color: #ffffff00;
