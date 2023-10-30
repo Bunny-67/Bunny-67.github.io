@@ -34,7 +34,7 @@ function toggleMobileMenu() {
       image.addEventListener("click", () => {
           const src = image.querySelector("img").getAttribute("src");
           fullscreenImage.setAttribute("src", src);
-          fullscreenContainer.style.display = "block"; 
+          fullscreenContainer.style.display = "flex"; 
           document.body.style.overflow = "hidden"; 
       });
   });
