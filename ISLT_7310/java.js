@@ -25,22 +25,28 @@ function toggleMobileMenu() {
   });
   
 
-  const imageContainer = document.querySelector(".image-container");
+  const gallery = document.querySelector(".gallery");
+  const fullscreenContainer = document.querySelector(".fullscreen-container");
   const fullscreenImage = document.getElementById("fullscreen-image");
-  const images = document.querySelectorAll(".image");
+  const closeButton = document.getElementById("close-button");
 
-  // Add click event listeners to each image in the gallery
-  images.forEach(image => {
+  gallery.querySelectorAll(".image").forEach(image => {
       image.addEventListener("click", () => {
           const src = image.querySelector("img").getAttribute("src");
           fullscreenImage.setAttribute("src", src);
-          imageContainer.style.display = "flex"; // Display the fullscreen container
-          document.body.style.overflow = "hidden"; // Prevent scrolling on the background content
+          fullscreenContainer.style.display = "flex"; 
+          document.body.style.overflow = "hidden"; 
       });
   });
 
-  // When the user clicks the fullscreen container, hide it
-  imageContainer.addEventListener("click", () => {
-      imageContainer.style.display = "none";
-      document.body.style.overflow = "auto"; // Re-enable scrolling
+  closeButton.addEventListener("click", () => {
+      fullscreenContainer.style.display = "none";
+      document.body.style.overflow = "auto"; 
+  });
+
+  fullscreenContainer.addEventListener("click", (event) => {
+      if (event.target === fullscreenContainer) {
+          fullscreenContainer.style.display = "none";
+          document.body.style.overflow = "auto";
+      }
   });
