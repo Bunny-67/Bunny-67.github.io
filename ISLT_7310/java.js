@@ -24,3 +24,23 @@ function toggleMobileMenu() {
 
   });
   
+
+  const imageContainer = document.querySelector(".image-container");
+  const fullscreenImage = document.getElementById("fullscreen-image");
+  const images = document.querySelectorAll(".image");
+
+  // Add click event listeners to each image in the gallery
+  images.forEach(image => {
+      image.addEventListener("click", () => {
+          const src = image.querySelector("img").getAttribute("src");
+          fullscreenImage.setAttribute("src", src);
+          imageContainer.style.display = "flex"; // Display the fullscreen container
+          document.body.style.overflow = "hidden"; // Prevent scrolling on the background content
+      });
+  });
+
+  // When the user clicks the fullscreen container, hide it
+  imageContainer.addEventListener("click", () => {
+      imageContainer.style.display = "none";
+      document.body.style.overflow = "auto"; // Re-enable scrolling
+  });

@@ -25,10 +25,11 @@ Tested:  , 2023; Passed on Chrome.
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photos</title>
+    <title>Project 1: Digital Images</title>
 
      <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="nav.css">
+     <script src="java.js"></script>
 
      <link rel="shortcut icon" type="image/x-icon" href="faviconv2.ico">
 
@@ -47,12 +48,6 @@ Tested:  , 2023; Passed on Chrome.
             margin-right: 20vw;
         }
 
-        .img_column {
-            display: flex;
-            flex-direction: column;
-            margin-left: 5%;
-        }
-
         .gallery img {
             width: 100%;
             height: auto;
@@ -60,10 +55,10 @@ Tested:  , 2023; Passed on Chrome.
             transition: transform 0.2s;
             cursor: pointer;
         }
+
         .gallery img:hover {
             transform: scale(1.1);
         }
-
 
         h2 {
             text-align: center;
@@ -73,7 +68,6 @@ Tested:  , 2023; Passed on Chrome.
             margin-top: 3vh; 
             margin-left: 2vh;       
         }
-        
 
         @media (max-width: 768px) {
             .gallery {
@@ -137,47 +131,41 @@ Tested:  , 2023; Passed on Chrome.
         <h2>Photo Gallery</h2>
 
     <div class="gallery">
-
-                <div class="image">
-                    <img src="/ISLT_7310/img-gallery/img1.jpg" alt="Image 1" id="fullscreen-image">
-                </div>
-                <div class="image">
-                    <img src="/ISLT_7310/img-gallery/img2.jpg" alt="Image 2" id="fullscreen-image">
-                </div>
-                <div class="image">
-                    <img src="/ISLT_7310/img-gallery/img3.jpg" alt="Image 3" id="fullscreen-image">
-                </div>
-                <div class="image">
-                    <img src="/ISLT_7310/img-gallery/img4.jpg" alt="Image 4" id="fullscreen-image">
-                </div>
-                <div class="image">
-                    <img src="/ISLT_7310/img-gallery/img5.jpg" alt="Image 5" id="fullscreen-image">
-                </div>
-
-            <div class="img_column">
-                <img src="/ISLT_7310/img-gallery/img6.jpg" alt="Image 6" id="fullscreen-image">
-                <img src="/ISLT_7310/img-gallery/img7.jpg" alt="Image 7" id="fullscreen-image">
-                <img src="/ISLT_7310/img-gallery/img8.jpg" alt="Image 8" id="fullscreen-image">
-                <img src="/ISLT_7310/img-gallery/img9.jpg" alt="Image 9" id="fullscreen-image">
-                <img src="/ISLT_7310/img-gallery/img10.jpg" alt="Image 10" id="fullscreen-image">
-            </div>
-            <div class="img_column">
-                <img src="/ISLT_7310/img-gallery/img11.jpg" alt="Image 11" id="fullscreen-image">
-                <img src="/ISLT_7310/img-gallery/img12.jpg" alt="Image 12" id="fullscreen-image">
-                <img src="/ISLT_7310/img-gallery/img13.jpg" alt="Image 13" id="fullscreen-image">
-                <img src="/ISLT_7310/img-gallery/img14.png" alt="Image 14" id="fullscreen-image">
-                <img src="/ISLT_7310/img-gallery/img15.png" alt="Image 15" id="fullscreen-image">
-            </div>
-            <div class="img_column">
-                <img src="/ISLT_7310/img-gallery/img16.jpg" alt="Image 16" id="fullscreen-image">
-                <img src="/ISLT_7310/img-gallery/img17.jpg" alt="Image 17" id="fullscreen-image">
-                <img src="/ISLT_7310/img-gallery/img18.jpg" alt="Image 18" id="fullscreen-image">
-                <img src="/ISLT_7310/img-gallery/img19.jpg" alt="Image 19" id="fullscreen-image">
-                <img src="/ISLT_7310/img-gallery/img20.jpg" alt="Image 20" id="fullscreen-image">
-            </div>
+        <img src="/ISLT_7310/img-gallery/img1.jpg" alt="Image 1">
+        <img src="/ISLT_7310/img-gallery/img2.jpg" alt="Image 2">
+        <img src="/ISLT_7310/img-gallery/img3.jpg" alt="Image 3">
+        <img src="/ISLT_7310/img-gallery/img4.jpg" alt="Image 4">
+        <img src="/ISLT_7310/img-gallery/img5.jpg" alt="Image 5">
+        <img src="/ISLT_7310/img-gallery/img6.jpg" alt="Image 6">
+        <img src="/ISLT_7310/img-gallery/img7.jpg" alt="Image 7">
+        <img src="/ISLT_7310/img-gallery/img8.jpg" alt="Image 8">
+        <img src="/ISLT_7310/img-gallery/img9.jpg" alt="Image 9">
+        <img src="/ISLT_7310/img-gallery/img10.jpg" alt="Image 10">
+        <img src="/ISLT_7310/img-gallery/img11.jpg" alt="Image 11">
+        <img src="/ISLT_7310/img-gallery/img12.jpg" alt="Image 12">
+        <img src="/ISLT_7310/img-gallery/img13.jpg" alt="Image 13">
+        <img src="/ISLT_7310/img-gallery/img14.png" alt="Image 14">
+        <img src="/ISLT_7310/img-gallery/img15.png" alt="Image 15">
+        <img src="/ISLT_7310/img-gallery/img16.jpg" alt="Image 16">
+        <img src="/ISLT_7310/img-gallery/img17.jpg" alt="Image 17">
+        <img src="/ISLT_7310/img-gallery/img18.jpg" alt="Image 18">
+        <img src="/ISLT_7310/img-gallery/img19.jpg" alt="Image 19">
+        <img src="/ISLT_7310/img-gallery/img20.jpg" alt="Image 20">
     </div>
-   
-
+    <div id="projtxt">
+        <p>
+            Introduction and Learning Objective
+            In this section, you will provide a brief introduction and purpose of your image, as well as state the learning objective for the students (that this image is attempting to meet).
+            Original File Links & Licensing
+            In this section, you will list and link all originally captured images as well as your vector and raster original files (e.g. Photoshop and Illustrator), as well as third-party files, and state the licensing.
+            Techniques 
+            Here you will list the beginning and advanced raster and vector techniques you used.
+            Design Elements
+            In this section, you will describe how your image addresses the 4 design elements C, R, A, and P.
+            Reflection
+            In this section, you will write a short reflection
+        </p>
+    </div>
     
     </main>   
 
@@ -210,7 +198,7 @@ Tested:  , 2023; Passed on Chrome.
                 ON ANY INFORMATION PROVIDED ON THE SITE. YOUR USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK.
     </p>
     </footer> 
-    <script src="java.js"></script>
+
     </body>
 
 </html>
