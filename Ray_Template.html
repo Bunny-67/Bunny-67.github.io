@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!--
+
+*****************************************************************************
+
+Title:  Template Page
+
+Use:  Main page of the site.
+
+Author:  Ian Ray
+
+School/Term:  Univ of Missouri, Fall 2023
+
+Developed: Sep 2, 2023
+
+Tested:  Sep 2, 2023; Passed on Chrome.
+
+******************************************************************************
+
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Page</title>
+
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="nav.css">
+     <script src="java.js"></script>
+
+     <link rel="shortcut icon" type="image/x-icon" href="faviconv2.ico">
+
+    <link href="https://db.onlinewebfonts.com/c/037a670cefc97958beb036dab0f6e254?family=Bodoni+MT" rel="stylesheet"> <!--font-family: "Bodoni MT";-->
+    <link href="https://db.onlinewebfonts.com/c/a96215c9d9ddf6f69b603c331081496e?family=ISOCTEUR+V1" rel="stylesheet"> <!--font-family: "ISOCTEUR V1";-->
+    <link href="https://db.onlinewebfonts.com/c/b5cae760e3ebeb67aed58508b5ae4269?family=Clicker+Script" rel="stylesheet"> <!--font-family: "Clicker Script";-->
+    <link href="https://db.onlinewebfonts.com/c/5fc6f4fd75e944a52a342ab2c7f100f1?family=Montserrat" rel="stylesheet"> <!--font-family: "Montserrat";-->
+
+    <style>
+
+         @media only screen and (max-width:768px) {
+
+
+         }
+         
+     </style>
+
+        <Simple Browser: Show></Simple> 
+
+</head>
+
+<body>
+    
+    <header>  
+        <div id="brand"><a href="/ISLT_7310/index">ianrayediting.com</a></div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/ISLT_7310/about">About</a></li>
+                    <li class="drop-menu-btn"><a href="#">Projects</a>
+                        <ul class="drop-menu-content"> 
+                            <li><a href="/ISLT_7310/projects_photos">Photography</a></li>
+                            <li><a href="/ISLT_7310/projects_videos">Videography</a></li>
+                            <li><a href="/ISLT_7310/projects_graphics">Graphic Design</a></li>
+                        </ul>
+                    </li>
+                    <li style="margin-right: 3.5vw;"><a href="#/ISLT_7310/contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger-icon", oninput="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="/ISLT_7310/index">Home</a></li>
+                    <li><a href="/ISLT_7310/about">About</a></li>
+                    <li><a href="/ISLT_7310/contact">Contact</a></li>
+
+                            <li id="mobile-sub-menu-btn" oninput="toggleMobileSubMenu(this)">
+                                    <a href="#">Projects  +</a>
+                                    <ul class="mobile-sub-menu">
+                                            <li><a href="/ISLT_7310/projects_photos">Photography</a></li>
+                                            <li><a href="/ISLT_7310/projects_videos">Videography</a></li>
+                                            <li><a href="/ISLT_7310/projects_graphics">Graphic Design</a></li>
+                                    </ul>
+                            </li>
+                </ul>
+
+            </div>
+
+    </header>
+
+    <main>
+
+    
+    </main>   
+
+        <div id="div1"></div>
+        <div id="mobilediv0"></div>
+
+
+    <footer class="footer">
+        <div id="divF"></div>
+
+        <a href="/ISLT_7310/contact"><img src="emailicon.png" alt="Email" id="icon-anim" style="width:50px;height:50px;"></a>
+        <a href="/ISLT_7310/contact"><img src="phoneicon.png" alt="Phone" id="icon-anim" style="width:50px;height:50px;"></a>
+        <a href="https://www.youtube.com/channel/UCXRatvj5p5XcEfHOENdZIRg"><img src="yt_icon_mono_dark.png" alt="YouTube" id="icon-anim" style="width:50px;height:50px;"></a>
+
+
+    <p id="foot_txt">
+    Ian Ray <br>
+    Email: <br>
+    ianray.editing@gmail.com<br>
+    idry9v@umsystem.edu <br>
+    </p>
+    <p id="foot_txt2">
+                DISCLAIMER <br>
+                September 01, 2023 <br>
+                <br>
+                The information provided by Ian Ray Editing on https://ianrayediting.com is for general informational purposes only. All information on the Site <br>
+                is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, <br>
+                reliability, availability, or completeness of any information on the Site. <br>
+                UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE <br>
+                ON ANY INFORMATION PROVIDED ON THE SITE. YOUR USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK.
+    </p>
+    </footer> 
+
+    </body>
+
+</html>
