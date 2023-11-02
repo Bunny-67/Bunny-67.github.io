@@ -5,9 +5,9 @@
 
 *****************************************************************************
 
-Title:  Photos Page
+Title:  Graphics Page
 
-Use:  Photos projects page of the site.
+Use:  Graphics projects page of the site.
 
 Author:  Ian Ray
 
@@ -39,27 +39,6 @@ Tested:  , 2023; Passed on Chrome.
     <link href="https://db.onlinewebfonts.com/c/5fc6f4fd75e944a52a342ab2c7f100f1?family=Montserrat" rel="stylesheet"> <!--font-family: "Montserrat";-->
 
     <style>
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 10px;
-            padding: 20px;
-            margin-left: 20vw;
-            margin-right: 20vw;
-        }
-
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border: 1px solid #ddd;
-            transition: transform 0.2s;
-            cursor: pointer;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.1);
-        }
-
         h2 {
             text-align: center;
             font-family: "ISOCTEUR V1";
@@ -70,14 +49,7 @@ Tested:  , 2023; Passed on Chrome.
         }
 
         @media (max-width: 768px) {
-            .gallery {
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-                padding: 10px;
-            }
 
-            .gallery img {
-                max-width: 100%;
-            }
         }
     </style>
 
@@ -130,29 +102,75 @@ Tested:  , 2023; Passed on Chrome.
 
         <h2>Graphic Gallery</h2>
 
-    <div class="gallery">
-        <img src="/ISLT_7310/grph-gallery/grph1.png" alt="Graphic 1">
-        <img src="/ISLT_7310/grph-gallery/grph2.png" alt="Graphic 2">
-        <img src="/ISLT_7310/grph-gallery/grph3.png" alt="Graphic 3">
-        <img src="/ISLT_7310/grph-gallery/grph4.png" alt="Graphic 4">
-        <img src="/ISLT_7310/grph-gallery/grph5.png" alt="Graphic 5">
-        <img src="/ISLT_7310/grph-gallery/grph6.png" alt="Graphic 6">
-        <img src="/ISLT_7310/grph-gallery/grph7.png" alt="Graphic 7">
-        <img src="/ISLT_7310/grph-gallery/grph8.png" alt="Graphic 8">
-        <img src="/ISLT_7310/grph-gallery/grph9.png" alt="Graphic 9">
-        <img src="/ISLT_7310/grph-gallery/grph10.png" alt="Graphic 10">
-        <img src="/ISLT_7310/grph-gallery/grph11.png" alt="Graphic 11">
-        <img src="/ISLT_7310/grph-gallery/grph12.png" alt="Graphic 12">
-        <img src="/ISLT_7310/grph-gallery/grph13.png" alt="Graphic 13">
-        <img src="/ISLT_7310/grph-gallery/grph14.png" alt="Graphic 14">
-        <img src="/ISLT_7310/grph-gallery/grph15.png" alt="Graphic 15">
-        <img src="/ISLT_7310/grph-gallery/grph16.png" alt="Graphic 16">
-        <img src="/ISLT_7310/grph-gallery/grph17.png" alt="Graphic 17">
-        <img src="/ISLT_7310/grph-gallery/grph18.png" alt="Graphic 18">
-        <img src="/ISLT_7310/grph-gallery/grph19.png" alt="Graphic 19">
-        <img src="/ISLT_7310/grph-gallery/grph20.png" alt="Graphic 20">
-
-    </div>
+        <div class="gallery">
+            <div class="gallery">
+                <div class="image">
+                    <img src="/ISLT_7310/grph-gallery/grph1.png" alt="Image 1">
+                </div>
+                <div class="image">
+                    <img src="/ISLT_7310/grph-gallery/grph2.png" alt="Image 2">
+                </div>
+                <div class="image">
+                    <img src="/ISLT_7310/grph-gallery/grph3.png" alt="Image 3">
+                </div>
+                <div class="image">
+                    <img src="/ISLT_7310/grph-gallery/grph4.png" alt="Image 4">
+                </div>
+                <div class="image">
+                    <img src="/ISLT_7310/grph-gallery/grph5.png" alt="Image 5">
+                </div>
+                <div class="image">
+                    <img src="/ISLT_7310/grph-gallery/grph6.png" alt="Image 6">
+                </div>
+                <div class="image">
+                    <img src="/ISLT_7310/grph-gallery/grph7.png" alt="Image 7">
+                </div>
+                <div class="image">
+                    <img src="/ISLT_7310/grph-gallery/grph8.png" alt="Image 8">
+                </div>
+                <div class="image">
+                    <img src="/ISLT_7310/grph-gallery/grph9.png" alt="Image 9">
+                </div>
+                <div class="image">
+                    <img src="/ISLT_7310/grph-gallery/grph10.png" alt="Image 10">
+                </div>
+                <div class="image">
+                    <img src="/ISLT_7310/grph-gallery/grph11.png" alt="Image 11">
+                </div>
+                <div class="image">
+                    <img src="/ISLT_7310/grph-gallery/grph12.png" alt="Image 12">
+                </div>
+                <div class="image">
+                    <img src="/ISLT_7310/grph-gallery/grph13.png" alt="Image 13">
+                </div>
+                <div class="image">
+                    <img src="/ISLT_7310/grph-gallery/grph14.png" alt="Image 14">
+                </div>
+                <div class="image">
+                    <img src="/ISLT_7310/grph-gallery/grph15.png" alt="Image 15">
+                </div>
+                <div class="image">
+                    <img src="/ISLT_7310/grph-gallery/grph16.png" alt="Image 16">
+                </div>
+                <div class="image">
+                    <img src="/ISLT_7310/grph-gallery/grph17.png" alt="Image 17">
+                </div>
+                <div class="image">
+                    <img src="/ISLT_7310/grph-gallery/grph18.png" alt="Image 18">
+                </div>
+                <div class="image">
+                    <img src="/ISLT_7310/grph-gallery/grph19.png" alt="Image 19">
+                </div>
+                <div class="image">
+                    <img src="/ISLT_7310/grph-gallery/grph20.png" alt="Image 20">
+                </div>
+            </div>
+        </div>
+    
+        <div class="fullscreen-container">
+            <img src="" alt="Fullscreen Image" id="fullscreen-image">
+            <span id="close-button">&times;</span>
+        </div>
     
     </main>   
 
