@@ -41,7 +41,7 @@ Tested:  Sep 2, 2023; Passed on Chrome.
     <style>
 
         .indbody {
-            background-image: url(webcardind.png), linear-gradient(to right, rgb(11, 21, 41), rgb(11, 21, 47), rgb(11, 21, 41));
+            background-image: url(webcardindext.png), linear-gradient(to right, rgb(11, 21, 41), rgb(11, 21, 47), rgb(11, 21, 41));
             background-position: top, bottom;
             background-size: 100vw auto, 100vw auto;
             background-position-y: 5rem;
@@ -59,7 +59,7 @@ Tested:  Sep 2, 2023; Passed on Chrome.
              line-height: 7vw;
              font-weight: 100;
              text-align: left;
-             letter-spacing: 1.75vw;
+             letter-spacing: 1.25vw;
              padding: .5vw 1vw;
          }
 
@@ -67,12 +67,12 @@ Tested:  Sep 2, 2023; Passed on Chrome.
              color:rgb(0, 0, 0);
              font-family: "Montserrat";
              text-align: left;
-             max-width: 40vw;
-             font-size: 1.5vw;
+             max-width: 35vw;
+             font-size: 1.25vw;
              font-weight: 200;
              line-height: 2vw;
-             text-indent: 3vw;
-             padding-left: 1.5vw;
+             text-indent: 2vw;
+             padding-left: 6vw;
          }
 
          .artststbtn a {
@@ -107,7 +107,43 @@ Tested:  Sep 2, 2023; Passed on Chrome.
             margin-right: auto;
         }
 
+        .feat_vids {
+            height: 35%;
+            width: 100%;
+            background-color: rgb(0, 0, 0, 0);
+            position: absolute;
+            display: flex;
+            justify-content: center;
+        }
+        #feat_vid1 {
+            height: 12.5vw;
+            width: 25vw;
+            margin: 1vw;
+        }
+        #feat_vids_header {
+            font-size: x-large;
+            text-align: center;
+            font-family: "ISOCTEUR V1";
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-top: 2px;
+            margin-bottom: 5px;
+        }
 
+         @media only screen and (max-width:1024px) {
+            .feat_vids {
+            height: 35%;
+            width: 100%;
+            }
+            #feat_vid1 {
+            height: 10vw;
+            width: 20vw;
+            margin: 1vw;
+            }
+            #feat_vids_header {
+            font-size: large;
+            }
+         }
          @media only screen and (max-width:768px) {
             .indbody {
                 background-image: url(webcardind_mobile.png), linear-gradient(to right, rgb(11, 21, 41), rgb(11, 21, 47), rgb(11, 21, 41));
@@ -222,7 +258,7 @@ Tested:  Sep 2, 2023; Passed on Chrome.
 
             <p id="welcome_msg">
 
-                WELCOME<br>
+                WELCOME,<br>
                 I AM IAN RAY <br>
                 A DIGITAL MEDIA SPECIALIST<br>
                 AND THIS IS MY 
@@ -237,7 +273,37 @@ Tested:  Sep 2, 2023; Passed on Chrome.
                 </button>
             </div>
 
-                <div class="mobilediv0"></div>
+                <p id="feat_vids_header">Featured Videos</p>
+                <div class="feat_vids">
+                    <iframe id="feat_vid1" 
+                        src="https://www.youtube.com/embed/vHhr2saE1zI?si=LRJrSsU24hMOKDSU" 
+                        title="Ian Ray Video Editing Demo Reel"  
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <iframe id="feat_vid1" 
+                        src="https://www.youtube.com/embed/FPG41p23sgQ?si=3a_6HGJ5flcyE0ON" 
+                        title="Harmony Chiropractic: The Effects of Stress" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <iframe id="feat_vid1" 
+                        src="https://www.youtube.com/embed/EJCi-t1pBEk?si=1gdNz-hTiFf-XILl" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <iframe id="feat_vid1" 
+                        src="https://www.youtube.com/embed/UlNQpTOb8-8?si=QQuOr46xviKqVy4W" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="div4"></div>
+                <div class="div2"></div>
+
 
             <p id="intro_para">    
                 For the last five years, as a freelance digital media  specialist,
@@ -255,24 +321,9 @@ Tested:  Sep 2, 2023; Passed on Chrome.
             </p>
             
 
-            <div class="div2"></div>
-                
-            <div class="projtxt">
-                <div class="div0"></div>
-                <h3 style="text-align: center;">ISLT_4631</h3>
-                <div class="div0"></div>
-
-                <a href="/ISLT_7310/p1digitalimagesgrph" style="font-size: 1.25vw; color: rgb(0, 0, 0);">Project 1: Digital Images</a>
-                <br>
-                <a href="/ISLT_7310/p2digitalaudio" style="font-size: 1.25vw; color: rgb(0, 0, 0);">Project 2: Digital Audio</a>
-                <br>
-                <a href="/ISLT_7310/p3digitalvideo" style="font-size: 1.25vw; color: rgb(0, 0, 0);">Project 3: Digital Video</a>
-
-            </div>
-
     </main>   
 
-        <div class="div1"></div>
+        <div class="div2"></div>
         <div class="mobilediv0"></div>
 
 

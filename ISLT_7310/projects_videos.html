@@ -53,7 +53,7 @@ Tested:  Sep 12, 2023; Passed on Chrome.
         #harmony-box-1 {
           height: 50vh; width: 100vw;
           margin-top: 1vh;
-          background-color: rgb(0,0,0);
+          background-color: rgb(0,0,0,0);
           display: flex;
           flex-direction: row;
           justify-content: center;
@@ -75,6 +75,25 @@ Tested:  Sep 12, 2023; Passed on Chrome.
           text-wrap: wrap;
           margin-top: 3vh;
           text-indent: 2vw;
+        }
+
+        .demoreel-box {
+            height: 80vh; width: 80vw;
+            margin-top: calc(5rem + 2vh);
+        }
+
+        .feat_vids {
+            height: 35%;
+            width: 100%;
+            background-color: rgb(0, 0, 0, 0);
+            position: absolute;
+            display: flex;
+            justify-content: center;
+        }
+        #feat_vid1 {
+            height: 250px;
+            width: 400px;
+            margin: 25px;
         }
         
         @media only screen and (max-width:1200px) {
@@ -157,6 +176,22 @@ Tested:  Sep 12, 2023; Passed on Chrome.
 
 
     <main>
+              <div class="row">
+                <div class="column">
+                    <div class="demoreel-box">
+                        <iframe
+                            width="100%" height="100%" 
+                            src="https://www.youtube.com/embed/vHhr2saE1zI?si=LRJrSsU24hMOKDSU" 
+                            title="Ian Ray Video Editing Demo Reel" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div2"></div>
+
             <div id="harmony-box-1">
               <iframe id="harmony-vid1" 
                   src="https://www.youtube.com/embed/FPG41p23sgQ?si=3a_6HGJ5flcyE0ON" 
@@ -170,7 +205,7 @@ Tested:  Sep 12, 2023; Passed on Chrome.
                 a chiropractic firm in South Elgin, IL. For this I took on all of the roles
                 necessary to produce a finished video product, including directing, filming, 
                 lighting, sound design, video editing and graphic creation. I filmed and edited 
-                8 total videos spanning anywhere between 30sec to 3min. Harmony has used these 
+                8 total videos spanning 30sec to 3min. Harmony has used these 
                 videos to market on their Facebook and Instagram pages. Additionally, it was a 
                 great chance to branch into a new category of both filming and editing styles. 
                 The project lasted 6 months in total and utilized Adobe Premiere, Photoshop, and 
@@ -178,7 +213,34 @@ Tested:  Sep 12, 2023; Passed on Chrome.
               </p>
             </div>
             
-            <div class="div3"></div>
+            <div class="feat_vids">
+              <iframe id="feat_vid1" 
+                  src="https://www.youtube.com/embed/vHhr2saE1zI?si=LRJrSsU24hMOKDSU" 
+                  title="Ian Ray Video Editing Demo Reel"  
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+              </iframe>
+              <iframe id="feat_vid1" 
+                  src="https://www.youtube.com/embed/FPG41p23sgQ?si=3a_6HGJ5flcyE0ON" 
+                  title="Harmony Chiropractic: The Effects of Stress" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+              </iframe>
+              <iframe id="feat_vid1" 
+                  src="https://www.youtube.com/embed/EJCi-t1pBEk?si=1gdNz-hTiFf-XILl" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+              </iframe>
+              <iframe id="feat_vid1" 
+                  src="https://www.youtube.com/embed/UlNQpTOb8-8?si=QQuOr46xviKqVy4W" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+              </iframe>
+          </div>
+
+            <div class="div4"></div>
     </main>   
            
 
