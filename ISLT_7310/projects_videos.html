@@ -78,7 +78,7 @@ Tested:  Sep 12, 2023; Passed on Chrome.
         }
 
         .demoreel-box {
-            height: 80vh; width: 80vw;
+            height: 85vh; width: 70vw;
             margin-top: calc(5rem + 2vh);
         }
 
@@ -95,7 +95,18 @@ Tested:  Sep 12, 2023; Passed on Chrome.
             width: 400px;
             margin: 25px;
         }
-        
+        #feat_vids_header {
+            font-size: x-large;
+            text-align: center;
+            font-family: "ISOCTEUR V1";
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-top: 2px;
+            margin-bottom: 5px;
+        }
+
+
+
         @media only screen and (max-width:1200px) {
           #harmony-txt {
             font-size: 2vw;
@@ -106,6 +117,26 @@ Tested:  Sep 12, 2023; Passed on Chrome.
           }
         }
 
+        @media only screen and (max-width:1024px) {
+
+          .feat_vids {
+            height: 35%;
+            width: 100%;
+            }
+            #feat_vid {
+            height: 10vw;
+            width: 20vw;
+            margin: 1vw;
+            }
+            #feat_vids_header {
+            font-size: large;
+            }
+            .demoreel-box {
+            height: 50vh; width: 100vw;
+            margin-top: calc(5rem + 2vh);
+            }
+        }
+
         @media only screen and (max-width:768px) {
           #harmony-box-1 {
             flex-direction: column;
@@ -114,8 +145,7 @@ Tested:  Sep 12, 2023; Passed on Chrome.
           }
           #harmony-vid1 {
             margin-top: 5vh;
-            margin-left: auto;
-            margin-right: auto;
+            margin-left: 5vw;
             width: 90vw;
             height: 45vw;
           }
@@ -127,6 +157,11 @@ Tested:  Sep 12, 2023; Passed on Chrome.
             padding: 25px;
           }
 
+          .demoreel-box {
+            height: 45vh; width: 90vw;
+            margin-top: calc(5rem + 2vh);
+            margin-left: 5vw;
+            }
         }
 
   </style>
@@ -194,8 +229,8 @@ Tested:  Sep 12, 2023; Passed on Chrome.
 
             <div id="harmony-box-1">
               <iframe id="harmony-vid1" 
-                  src="https://www.youtube.com/embed/FPG41p23sgQ?si=3a_6HGJ5flcyE0ON" 
-                  title="YouTube video player" 
+                  src="https://www.youtube.com/embed/d5ehUjKRC3c?si=jXY1zyYvraUAuX75" 
+                  title="Harmony Chiropractic Testimonial Ad" 
                   frameborder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
               </iframe>
@@ -205,7 +240,7 @@ Tested:  Sep 12, 2023; Passed on Chrome.
                 a chiropractic firm in South Elgin, IL. For this I took on all of the roles
                 necessary to produce a finished video product, including directing, filming, 
                 lighting, sound design, video editing and graphic creation. I filmed and edited 
-                8 total videos spanning 30sec to 3min. Harmony has used these 
+                8 total videos spanning 30sec to 2min. Harmony has used these 
                 videos to market on their Facebook and Instagram pages. Additionally, it was a 
                 great chance to branch into a new category of both filming and editing styles. 
                 The project lasted 6 months in total and utilized Adobe Premiere, Photoshop, and 
@@ -213,10 +248,43 @@ Tested:  Sep 12, 2023; Passed on Chrome.
               </p>
             </div>
             
+            <div class="div0"></div>
+
             <div class="feat_vids">
               <iframe id="feat_vid1" 
-                  src="https://www.youtube.com/embed/vHhr2saE1zI?si=LRJrSsU24hMOKDSU" 
-                  title="Ian Ray Video Editing Demo Reel"  
+                  src="https://www.youtube.com/embed/Esj9KbX3wzQ?si=rTY6-LsD_AzOKmrQ" 
+                  title="Harmony Chiropractic: Timing"  
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+              </iframe>
+              <iframe id="feat_vid1" 
+                  src="https://www.youtube.com/embed/hWll2XgnPUQ?si=oxk2XyG3YcnVpg_x" 
+                  title="Harmony Chiropractic: Aging" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+              </iframe>
+              <iframe id="feat_vid1" 
+                  src="https://www.youtube.com/embed/msdEOLwOlTo?si=vuudQgAQ06BvHu-C" 
+                  title="Harmony Chiropractic: Laser Therapy" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+              </iframe>
+              <iframe id="feat_vid1" 
+                  src="https://www.youtube.com/embed/LvGG8jJ0jEU?si=RDHxI_NVQFS_77Sl" 
+                  title="Harmony Chiropractic: Mental Health" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+              </iframe>
+          </div>
+
+            <div class="div4"></div>
+            <div class="div2"></div>
+
+            <p id="feat_vids_header">Featured Videos</p>
+            <div class="feat_vids">
+              <iframe id="feat_vid1" 
+                  src="https://www.youtube.com/embed/06sXTHuIuhc?si=V6ROZ09n5KH7LW3B" 
+                  title="James Larkin Genealogy Mini-Documentary"  
                   frameborder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
               </iframe>
@@ -240,6 +308,66 @@ Tested:  Sep 12, 2023; Passed on Chrome.
               </iframe>
           </div>
 
+          <div class="div4"></div>
+          <div class="div2"></div>
+
+          <p id="feat_vids_header">More Videos</p>
+          <div class="feat_vids">
+            <iframe id="feat_vid1" 
+                src="https://www.youtube.com/embed/vpHDDs5ocVw?si=6XBAYILkN0-ZHQQq" 
+                title="YouTube video player"  
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+            <iframe id="feat_vid1" 
+                src="https://www.youtube.com/embed/hTNwvjvubrE?si=RM0VJWT54fhOHSPl" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+            <iframe id="feat_vid1" 
+                src="https://www.youtube.com/embed/w0lrqZcQz6E?si=ZMiZ9-mN2qeNU8R7" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+            <iframe id="feat_vid1" 
+                src="https://www.youtube.com/embed/sarKYqx1Xlc?si=hI0KhWlBVvD7yjo5" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="div4"></div>
+        <div class="div0"></div>
+
+        <div class="feat_vids">
+          <iframe id="feat_vid1" 
+              src="https://www.youtube.com/embed/RBjC5qAqdRY?si=eeuGnILlSZbf4uD5" 
+              title="YouTube video player"  
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+          </iframe>
+          <iframe id="feat_vid1" 
+              src="https://www.youtube.com/embed/lWZQUHMHZL0?si=vz6z5eTXzYjA7tXT" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+          </iframe>
+          <iframe id="feat_vid1" 
+              src="https://www.youtube.com/embed/ePZC6oz7QcQ?si=pcSVm4ef6EV5fDup" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+          </iframe>
+          <iframe id="feat_vid1" 
+              src="https://www.youtube.com/embed/qM_HU317k8U?si=2PllBdQ3Ux9iOMiw" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+          </iframe>
+      </div>
             <div class="div4"></div>
     </main>   
            

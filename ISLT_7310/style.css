@@ -112,14 +112,18 @@ body {
         color:white;
         font-family:Arial, Helvetica, sans-serif;
         line-height: 2vh;
+        position: absolute;
+        bottom: 200px;
+        left: 44.9vw;
     }
     #foot_txt2 {
         color:rgb(46, 46, 46);
         font-family:Arial, Helvetica, sans-serif;
         font-size: x-small;
-        margin-top: 50px;
-        bottom: 0;
         text-align: left;
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
     }
     #txt_ind {
         text-indent: 25px;
